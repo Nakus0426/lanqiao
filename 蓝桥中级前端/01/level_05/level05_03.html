@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人得税</title>
+    <script>
+        function calc(optr){
+            var first = document.getElementById("firstNum").value;
+            var second = document.getElementById("secondNum").value;
+            first = parseFloat(first);
+            second = parseFloat(second);
+            switch (optr) {
+                case "-":
+                    result = (first - second)*0.1;
+                    break;
+                default:
+                    break;
+            }
+            if (isNaN(result)) {
+                alert('输入的不是数字！');
+            }else {
+                result = new Number(result).toFixed(2);
+                document.getElementById('result').value = result;
+
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="">
+    个人所得税计算 <br>
+    请输入月收入： <input  id="firstNum" type="text"><br>
+    请输入所得税起征额： <input id="secondNum" type="text"><br>
+    所得税：<input  id="result" type="text"><br>
+    <button type="button" onclick="calc('-')">计算</button>
+    <button type="reset">重置</button>
+</form>
+</body>
+</html>

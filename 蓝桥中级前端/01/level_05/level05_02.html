@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阶段三</title>
+    <script>
+        function calc() {
+            var num = document.getElementById("num").value;
+            var price = document.getElementById("price").value;
+            var charges = document.getElementById("charges").value;
+            var sum2
+
+            var num2 = parseInt(num);
+            var price2 = parseInt(price);
+            var charges2 = parseInt(charges);
+
+            sum2 = (num2 * price2) + charges2
+            document.getElementById("sum2").value = sum2
+        }
+    </script>
+</head>
+<body>
+<table id="calc" style="border: 2px solid black">
+    <tr>
+        <td>商品名称</td>
+        <td>数量</td>
+        <td>单价</td>
+        <td>运费</td>
+        <td>
+            <button id="sum" type="button" onclick="calc()">合计</button>
+        </td>
+    </tr>
+    <tr>
+        <td>道具</td>
+        <td><input id="num" type="text"></td>
+        <td><input id="price" type="text"></td>
+        <td><input id="charges" type="text"></td>
+        <td><input id="sum2"></td>
+    </tr>
+</table>
+</body>
+</html>

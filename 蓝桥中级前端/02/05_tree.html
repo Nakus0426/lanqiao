@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉展开列表</title>
+    <style>
+        a{
+            display: block;
+        }
+        ul{
+            display: none;
+            padding: 0;
+            margin: 5px 0px;
+        }
+        ul li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+    <script>
+        function showMenu(menu) {
+            var ul_menu = document.getElementById(menu);
+            if (ul_menu.style.display == 'block') {
+                ul_menu.style.display = 'none'; //es6 ;
+            } else {
+                ul_menu.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+<a href="javascript:void(0)" onclick="showMenu('menu1')">
+    <img src="images/icon/z-1.jpg">xxxx
+</a>
+<ul id="menu1">
+    <li><img src="images/icon/z-top.gif">xxx</li>
+    <li><img src="images/icon/z-top.gif">xxxx</li>
+    <li><img src="images/icon/z-top.gif">xx</li>
+    <li><img src="images/icon/z-top.gif">xxxx</li>
+    <li><img src="images/icon/z-end.gif">xxx</li>
+</ul>
+<a href="javascript:void(0)"  onclick="showMenu('menu2')">
+    <img src="images/icon/z-1.jpg" alt="">xx
+</a>
+<ul id="menu2">
+    <li><img src="images/icon/z-top.gif">aaa</li>
+    <li><img src="images/icon/z-top.gif">aaaaa</li>
+    <li><img src="images/icon/z-top.gif">aaa</li>
+    <li><img src="images/icon/z-top.gif">aaaa</li>
+    <li><img src="images/icon/z-top.gif">a</li>
+    <li><img src="images/icon/z-end.gif">aaa</li>
+</ul>
+<a href="javascript:void(0)" onclick="showMenu('menu3')">
+    <img src="images/icon/z-1.jpg" alt="">bbbb
+</a>
+<ul id="menu3">
+    <li><img src="images/icon/z-top.gif">bbbbb</li>
+    <li><img src="images/icon/z-top.gif">bbb</li>
+    <li><img src="images/icon/z-top.gif">b</li>
+    <li><img src="images/icon/z-top.gif">bb</li>
+    <li><img src="images/icon/z-top.gif">bbbbbbbbbbbbbb</li>
+    <li><img src="images/icon/z-end.gif">bbb</li>
+</ul>
+</body>
+</html>

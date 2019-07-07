@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联级选择</title>
+</head>
+<body>
+    <form action="">
+        省份：
+        <select name="provent" id="province" onchange="changeProvince(this)">
+            <option value="">--请选择--</option>
+        </select><br><br>
+        城市：
+        <select name="city" id="city">
+            <option value="">--请选择--</option>
+        </select><br><br>
+    </form>
+
+    <script>
+        var provinces = [{
+            id: 100,
+            name: '广东',
+            cities:[{id: 1001, name: '广州'},
+                {id: 1002, name: '深圳'},
+                {id: 1003, name: '佛山'},
+                {id: 1004, name: '中山'}
+            ]
+        },
+            {
+                id: 101,
+                name: '广西',
+                cities:[{id: 1011, name: '南宁'},
+                    {id: 1012, name: '桂林'},
+                    {id: 1013, name: '百色'},
+                    {id: 1014, name: '柳州'}
+                ]
+            }
+        ];
+        initProvent();
+
+        function initProvent() {
+            for (var i=0; i<provinces.length; i++){
+                var province = provinces[i];
+
+                var provinceEle = document.getElementById("province");
+
+                var option = new Option(province.name,province.id);
+
+                provinceEle.options.add(option);
+            }
+        }
+
+        function changeProvince(ele) {
+            var cityEle = document.getElementById("city");
+            //清除上下次加入城市列表
+            cityEle.options.length = 0;
+
+            var provinceId = ele.options[ele.selectedIndex].value;
+
+            for (var i=0; i<provinces.length; i++){
+                if (provinces[i].id == provinceId) {
+                    var cities = provinces[i].cities;
+                    for (var j=0; j<cities.length; j++){
+                        var opt = new Option(cities[j].name, cities[j].id);
+                        cityEle.options.add(opt);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

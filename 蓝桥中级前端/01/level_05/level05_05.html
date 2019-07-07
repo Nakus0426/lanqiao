@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阶段五</title>
+    <script>
+        function calc(sign) {
+            var first = document.getElementById("first").value
+            var second = document.getElementById("second").value
+
+            var first1 = parseInt(first)
+            var second1 = parseInt(second)
+            var calc;
+            switch (sign) {
+                case '+':
+                    calc = first1 + second1
+                    break
+                case '-':
+                    calc = first1 - second1
+                    break
+                case 'x':
+                    calc = first1 * second1
+                    break
+                case '/':
+                    calc = first1 / second1
+                    break
+            }
+            document.getElementById("calc").value = calc
+        }
+    </script>
+</head>
+<body>
+第一个数<input id="first" type="text"><br>
+第二个数<input id="second" type="text"><br>
+<button id="add" type="button" onclick="calc('+')">+</button>
+<button id="sub" type="button" onclick="calc('-')">-</button>
+<button id="mul" type="button" onclick="calc('x')">x</button>
+<button id="div" type="button" onclick="calc('/')">/</button>
+<br>
+结果是：<input id="calc">
+</body>
+</html>

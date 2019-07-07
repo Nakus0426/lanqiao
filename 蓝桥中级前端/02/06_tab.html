@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>标签</title>
+<style>
+    body,div,img{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    #container{
+        position: relative;
+        top: 100px;
+        left: 200px;
+    }
+</style>
+
+<body>
+<div id="container">
+    <div>
+        <span id="tab1">
+            <img src="images/tabs/game1.jpg" onmouseover="toggleImg('game2','mobile1','card1')">
+        </span>
+        <span id="tab2">
+            <img src="images/tabs/mobile2.jpg" onmouseover="toggleImg('game1','mobile2','phone')">
+        </span>
+    </div>
+    <div>
+        <img id="bodyImg" src="images/tabs/phone.jpg">
+    </div>
+</div>
+</body>
+<script>
+    function toggleImg(tab1Img, tab2Img, img) {
+        var tab1 = document.querySelector("#tab1 img");
+        var tab2 = document.querySelector("#tab2 img");
+        // console.log(tab1);
+
+        tab1.src = "images/tabs/" + tab1Img + ".jpg";
+        tab2.src = "images/tabs/" + tab2Img + ".jpg";
+
+        document.getElementById("bodyImg").src = "images/tabs/" + img + ".jpg";
+    }
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全选</title>
+</head>
+<script>
+    function checkAll(ele) {
+        var xxx = document.getElementById('checkall');
+        if (xxx) {
+            console.log('xxx exits');
+        }else{
+            console.log('xxx not exits');
+        }
+
+        var hobbys = document.getElementsByName('hobby');
+
+        if (ele.checked){
+            for(var i=0; i<hobbys.length; i++){
+                hobbys[i].checked = true;
+            }
+        }else {
+            for(var j=0; j<hobbys.length; j++){
+                hobbys[j].checked = false;
+            }
+        }
+
+        /*hobbys.forEach(function(e){ // 回调函数
+            if (checkall.checked) {
+                e.checked = true;
+            }else {
+                e.checked = false;
+            }
+        });*/
+    }
+</script>
+<body>
+    <form action="">
+        <input type="checkbox" id="checkall" onclick="checkAll(this)">全选 <br>
+        爱好：<br>
+        <input type="checkbox" name="hobby">读书<br>
+        <input type="checkbox" name="hobby">电影<br>
+        <input type="checkbox" name="hobby">游戏<br>
+        <input type="checkbox" name="hobby">游泳<br>
+        <input type="checkbox" name="hobby">写代码<br><br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时间显示</title>
+</head>
+<script>
+    function timer() {
+        var now = new Date();
+
+        // 通过css的选择符获得html元素
+        var timer1 = document.querySelector('#timer1');
+        var timer2 = document.querySelector('#timer2');
+
+        timer1.innerHTML = now.getFullYear() + '年' + now.getMonth() + '月'
+            + now.getDate() + '日'
+            +now.getHours() +'时' + now.getMinutes() +'分' + now.getSeconds() + '秒';
+
+        /*  var year = now.getFullYear();
+            var month = now.getMonth() + 1;
+            var date = now.getDate();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            timer1.innerHTML = `${year}年
+                        ${month}月
+                        ${date}日
+                        ${hours}时
+                        ${minutes}分
+                        ${seconds}秒`;
+
+            var htmlStr = `
+            <div>
+                <span>${year}</span>
+                <span>${month}</span>
+                <span>${date}</span>
+            </div> `;
+
+            timer2.innerHTML = htmlStr;
+        */
+    }
+    setInterval(timer, 1000);
+</script>
+<body onload="timer()">
+    <h1 id="timer1"></h1>
+    <h1 id="timer2"></h1>
+</body>
+</html>
