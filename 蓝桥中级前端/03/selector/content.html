@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器内容</title>
+    <script src="../jquery-2.2.4.js"></script>
+    <style>
+        body{margin-left: 50px;}
+
+        .buydetail {
+            width: 500px;
+            border: 2px solid mistyrose;
+            border-collapse: collapse;
+        }
+
+        .buydetail tr{ height: 30px; }
+
+        .buydetail td,th{ text-align: center; }
+
+        td:empty{
+            background-color: azure;
+            /*content: '****';*/
+        }
+        .xx{
+            background-color: brown;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $(".buydetail td:contains('1500.0')").css({'background-color':'red','font-weight':'bold'});
+            $(".buydetail td:empty").text('...');
+            $(".month").parent().css({'background-color':'mistyrose'});
+            $(".month").parent('.row').css({'background-color':'blue'});
+        })
+    </script>
+</head>
+<body>
+<table class="buydetail" border="2">
+    <!-- 表格标题 -->
+    <caption>月度消费明细</caption>
+    <tr class="header">
+        <th>月度</th>
+        <th>衣帽</th>
+        <th>娱乐</th>
+        <th>吃喝玩乐</th>
+    </tr>
+    <tr class="row">
+        <td class="month"><span>一月</span></td>
+        <td>￥1200.0</td>
+        <td>￥500.0</td>
+        <td>￥1500.0</td>
+    </tr>
+    <tr>
+        <td class="month"><span>二月</span></td>
+        <td>￥800.0</td>
+        <td>￥550.0</td>
+        <td>￥2000.0</td>
+    </tr>
+    <tr>
+        <td class="month">三月</td>
+        <td>￥450.0</td>
+        <td>￥300.0</td>
+        <td>￥1000.0</td>
+    </tr>
+    <tr>
+        <td class="month">四月</td>
+        <td></td>
+        <td>￥300.0</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="month">五月</td>
+        <td>￥450.0</td>
+        <td>￥300.0</td>
+        <td>￥1000.0</td>
+    </tr>
+    <tr>
+        <td class="month">六月</td>
+        <td>￥1450.0</td>
+        <td>￥300.0</td>
+        <td>￥1000.0</td>
+    </tr>
+    <tr>
+        <td class="month">七月</td>
+        <td>￥450.0</td>
+        <td>￥1300.0</td>
+        <td>￥1000.0</td>
+    </tr>
+</table>
+</body>
+</html>

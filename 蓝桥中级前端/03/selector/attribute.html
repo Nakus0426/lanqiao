@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器属性</title>
+    <script src="../jquery-2.2.4.js"></script>
+    <script>
+        $(function () {
+            var size = $('[href]').size();
+            console.log(size);
+
+            console.log($("a[id != 'taobao']").get(0));
+            $()
+        })
+    </script>
+</head>
+<body>
+    <div class="my">
+
+        <h4><a id="taobao" href="https://www.taobao.com">淘宝</a></h4>
+        <h4><a id="sina" href="http://www.sina.com">新浪</a></h4>
+    </div>
+</body>
+</html>
