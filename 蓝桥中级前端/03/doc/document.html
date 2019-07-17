@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文档处理</title>
+    <script src="../jquery-2.2.4.js"></script>
+
+</head>
+
+<body>
+<form action="javascript:void(0)">
+    月度:<select name="" id="month" style="width: 100px">
+    <option value="四月">四月</option>
+    <option value="五月">五月</option>
+    <option value="六月">六月</option>
+    <option value="七月">七月</option>
+    <option value="8月">8月</option>
+    <option value="9月">9月</option>
+    <option value="10月">10月</option>
+    <option value="11月">11月</option>
+    <option value="12月">12月</option>
+</select>
+    <br><br>
+    衣帽:<input type="text" name="" id="hat">
+    <br><br>
+
+    娱乐:<input type="text" name="" id="entr">
+
+    <br><br>
+    吃喝玩乐:<input type="text" name="" id="eat">
+</form>
+
+<a href="javascript:void(0)" id="addRowBtn">添加行</a>&nbsp;&nbsp;&nbsp;
+
+<a href="javascript:void(0)" id="addHeaderBtn">在表格前加入一级标题</a>
+
+<!--h1-->
+<table class="buydetail" border="2">
+    <!-- 表格标题 -->
+    <caption>月度消费明细</caption>
+    <tr>
+        <th>月度</th>
+        <th>衣帽</th>
+        <th>娱乐</th>
+        <th>吃喝玩乐</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td class="month">一月</td>
+        <td>￥1200.0</td>
+        <td>￥500.0</td>
+        <td>￥1500.0</td>
+        <td><a href="javascript:void(0)">delete</a></td>
+    </tr>
+    <tr>
+        <td class="month">二月</td>
+        <td>￥800.0</td>
+        <td>￥550.0</td>
+        <td>￥2000.0</td>
+        <td><a href="javascript:void(0)">delete</a></td>
+    </tr>
+    <tr>
+        <td class="month">三月</td>
+        <td>￥450.0</td>
+        <td>￥300.0</td>
+        <td>￥1000.0</td>
+        <td><a href="javascript:void(0)">delete</a></td>
+    </tr>
+
+
+</table>
+
+<script>
+    $(function () {
+        $('#addRowBtn').click(() => {
+            const month = $('#month').val();
+            const hat = $('#hat').val();
+            const entr = $('#entr').val();
+            const eat = $('#eat').val();
+
+            const temp = `
+                    <tr>
+                        <td class="month">${month}</td>
+                        <td>￥${hat}</td>
+                        <td>￥${entr}</td>
+                        <td>￥${eat}</td>
+                        <td><a href="javascript:void(0)">delete</a></td>
+                    </tr>`;
+
+            $('.buydetail').append($(temp));
+
+            $('.buydetail tr').each(function () {
+                $(this).find('td:eq(4)').find('a').click(function () {
+                    $(this).parent().parent().remove();
+                })
+            })
+        })
+
+        $('#addHeaderBtn').click(() => {
+            //aaa在xxx前插入
+            //$('<h1>我是新加入的1级标题insertBefore</h1>').insertBefore($('.buydetail'));
+            //xxx前插入aaa
+            $('.buydetail').before($('<h1>我是新加入的1级标题before</h1>'));
+        })
+
+        $('.buydetail tr').each(function () {
+            $(this).find('td:eq(4)').find('a').click(function () {
+                $(this).parent().parent().remove();
+            })
+        })
+    })
+</script>
+</body>
+</html>

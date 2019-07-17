@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性</title>
+    <script src="../jquery-2.2.4.js"></script>
+    <style>
+        .pre{
+            background-color: #F17B00;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('#changeBtn').click(() =>{
+                $('#taobao').attr('href',"http://www.jd.com");
+                $('#taobao > span').text('jd京东');
+            })
+            $('#addcssBtn').click(() =>{
+                $('pre').addClass('pre');
+            })
+            $('#recssBtn').click(() =>{
+                $('pre').removeClass('pre');
+            })
+            $('#cssToggleBtn').click(() =>{
+                $('pre').toggleClass('pre');
+            })
+
+        })
+    </script>
+</head>
+<body>
+<pre>
+        属性
+            attr(name|pro|key,val|fn)
+            removeAttr(name)
+            prop(n|p|k,v|f)
+            removeProp(name)
+
+        CSS 类
+            addClass(class|fn)
+            removeClass([class|fn])
+            toggleClass(class|fn[,sw])
+
+        HTML代码/文本/值
+            html([val|fn])
+            text([val|fn])
+            val([val|fn|arr])
+</pre>
+<a id="taobao" href="http://www.taobao.com"><span>taobao淘宝</span></a>
+<br><br>
+<button id="changeBtn" type="button">change href</button>
+<button id="addcssBtn" type="button">add CSS Class</button>
+<button id="recssBtn" type="button">remove CSS Class</button>
+
+<button id="cssToggleBtn" type="button">toggle CSS Class</button>
+<br><br>
+
+<button id="textBtn" type="button">text()</button>
+<button id="htmlBtn" type="button">html()</button>
+
+</body>
+</html>

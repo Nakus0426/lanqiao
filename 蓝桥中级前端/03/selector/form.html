@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器表单</title>
+    <script src="../jquery-2.2.4.js"></script>
+    <script>
+        $(function () {
+            $(":input[name='username'],#pwd").css({'color':'red'});
+            $('#checkall').click(function () {
+                if (this.checked){
+                    $(":checkbox[name='hobby']").prop('checked',true);
+                }else{
+                    $(":checkbox[name='hobby']").prop('checked',false);
+                }
+            })
+        })
+
+    </script>
+</head>
+<body>
+<form action="javascript:void(0)">
+    <input type="button" value="Input Button"/><br><br>
+
+    <input type="checkbox" name="checkall" id="checkall">全选<br>
+
+    <input type="checkbox" name="hobby" value="编程" checked/>编程
+    <input type="checkbox" name="hobby" value="读书"/>读书
+    <input type="checkbox" name="hobby" value="旅游"/>旅游<br><br>
+
+    上传文件：<input type="file"/><br>
+    <input type="hidden"/><br>
+
+    <input type="image" src="../images/right_daohang5.jpg"/><br>
+
+    用户名：<input type="text" name="username" value="kkkkkkkk" disabled/><br>
+
+    密码：<input id="pwd" type="password"/><br>
+
+    性别：<input type="radio" name="gender" value="男"/>男
+    <input type="radio" name="gender" value="女"/>女<br>
+
+    <select>
+        <option value="aa">Option</option>
+        <option value="bb">Option</option>
+        <option value="cc">Option</option>
+    </select>
+    <br>
+
+    <textarea>凤凰通行证注册协议凤凰通行证注册协议凤凰通行证注册协议凤凰通行证注册协议凤凰通行证注册协议凤凰通行证注册协议凤凰通行证注册协议......</textarea><br>
+    <br>
+
+    <input type="reset" value="重置input"/><br>
+    <input type="submit" value="提交input"/><br>
+
+    <button>Button</button>
+    <br>
+
+    <button class="btn" type="button">Click me</button>
+</form>
+</body>
+</html>
