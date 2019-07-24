@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery实现ajax</title>
+    <script src="../jquery-2.2.4.js"></script>
+
+    <script>
+        $(function () {
+            $('#load').click(function () {
+                $('#mydiv').load('server.html');
+            });
+
+            $('#get').click(function () {
+                $.get('server.html', function (res) {
+                    $('#mydiv').html(res);
+                }, 'html')
+            });
+
+            $('#post').click(function () {
+                $.post('server.html', function (res) {
+                    $('#mydiv').text(res);
+                }, 'text')
+            });
+
+            $('#jason_1').click(function () {
+                $.getJSON('jason.html', function (res) {
+                    let templateTable = `
+                        <table class="table">
+                            <tr>
+                                <th>编号</th>
+                                <th>姓名</th>
+                                <th>工资</th>
+                            </tr>
+                    `;
+
+                    res.forEach((row) => {
+                        const templateTr = `
+                        <tr>
+                            <td>${row.empno}</td>
+                            <td>${row.ename}</td>
+                            <td>${row.sal}</td>
+                        </tr>
+                    `;
+                        templateTable += templateTr;
+                    });
+                    templateTable += `</table>`;
+                    $('#mydiv').html(templateTable);
+                })
+            });
+
+            $('#jason_2').click(function () {
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+<button id="load" type="button">load</button>
+<button id="get" type="button">get</button>
+<button id="post" type="button">post</button>
+<button id="jason_1" type="button">jason_1</button>
+<button id="jason_2" type="button">jason_2</button>
+<div id="mydiv"></div>
+</body>
+
+</html>

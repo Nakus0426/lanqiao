@@ -1,0 +1,638 @@
+@charset "utf-8";
+/*--------------------------------header-----------------------------------*/
+#header {
+    background: url("../images/h_bg.jpg") no-repeat -22px 0px;
+    width: 100%;
+    height: 130px;
+}
+
+#container {
+    margin: 0px auto;
+    width: 980px;
+}
+
+#logo {
+    background: url("../images/h_bg.jpg") no-repeat -22px 0px;
+    width: 280px;
+    float: left;
+}
+
+.menu {
+    padding: 13px 0px 0px;
+    width: 45%;
+    height: 28px;
+    float: right;
+}
+
+.pic {
+    background: url("../images/icon.gif") no-repeat;
+    width: 28px;
+    height: 28px;
+}
+
+.pic1 {
+
+}
+
+.menu ul li {
+    font-size: 12px;
+    float: left;
+    font-size-adjust: auto;
+    font-stretch: normal;
+}
+
+.txt {
+    padding: 5px 5px;
+    text-align: center;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.pic2 {
+    background-position: -40px 0px;
+}
+
+.pic3 {
+    background-position: -80px 0px;
+}
+
+.pic4 {
+    background-position: -120px 0px;
+}
+
+.btn {
+    background-position: 0px -25px;
+    width: 38px;
+}
+
+.btn {
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.f_r {
+    float: right;
+}
+
+.w62p {
+    width: 62%;
+}
+
+.hello {
+    color: rgba(99, 99, 99, 1.00);
+    letter-spacing: 3px;
+    padding-top: 25px;
+}
+
+.f_l {
+    float: left;
+}
+
+.w100p {
+    width: 100%
+}
+
+.nav li a {
+    padding: 8px 10px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.nav li {
+    width: 84px;
+    margin-top: 6px;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+}
+
+/*------------------------------header end--------------------------------*/
+
+/*-----------------------------register mian------------------------------*/
+.reg {
+    background: url("../images/reg_bg.gif") no-repeat;
+    width: 100%;
+    height: 500px;
+    padding-top: 65px;
+}
+
+tr {
+    margin: 0px;
+    padding: 0px;
+}
+
+.a_r {
+    text-align: right;
+}
+
+
+.w15p {
+    width: 15%;
+}
+
+.w500 {
+    width: 500px;
+}
+
+input {
+    border: 1px solid rgba(139, 139, 139, 1.00);
+    width: 131px;
+    height: 17px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.reg .protocol {
+    vertical-align: top;
+}
+
+.reg textarea {
+    border: 1px solid groove;
+}
+
+.b0 {
+    border: 0px currentColor;
+    width: auto;
+    height: auto;
+}
+
+/*------------------------------dateTimePicker----------------------------*/
+#birth {
+    border: 1px solid #ccc;
+}
+
+#gw--datetimepicker {
+    margin-left: 100px;
+    width: 222px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5px;
+    position: absolute;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    text-align: center;
+}
+
+#gw--datetimepicker-header {
+    font-family: 微软雅黑;
+    font-weight: bold;
+}
+
+#gw--datetimepicker-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gw--datetimepicker-header ul li {
+    width: 30%;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#gw--datetimepicker-header ul li:hover {
+    background-color: #eee;
+}
+
+#gw--datetimepicker-header ul li:not(:first-child) {
+    margin-left: -4px;
+}
+
+#gw--datetimepicker-header ul li:first-child, #gw--datetimepicker-header ul li:last-child {
+    width: 17%;
+}
+
+#gw--datetimepicker-body {
+    height: 208px;
+}
+
+#gw--datetimepicker-body table {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#gw--datetimepicker-body table thead {
+    font-family: 微软雅黑;
+}
+
+#gw--datetimepicker-body table tbody {
+    font-family: Arial;
+}
+
+#gw--datetimepicker-body table tbody td {
+    border-radius: 4px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#gw--datetimepicker-body table tbody td:hover {
+    background-color: #eee;
+}
+
+#gw--datetimepicker-selected-year::after {
+    content: "年";
+}
+
+#gw--datetimepicker-selected-month::after {
+    content: "月";
+}
+
+#gw--datetimepicker-year,
+#gw--datetimepicker-month {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+#gw--datetimepicker-year-body td,
+#gw--datetimepicker-month-body td {
+    width: 62px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+#gw--datetimepicker-day thead th,
+#gw--datetimepicker-day-body td {
+    padding: 6px 7px;
+}
+
+#gw--datetimepicker-day-body td.prev, #gw--datetimepicker-day-body td.next {
+    color: #999;
+}
+
+#gw--now {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#gw--now:hover {
+    background-color: #eee;
+}
+
+#gw--now:active, #gw--now:focus {
+    outline: none;
+}
+
+/*-------------------------dateTimePicker end--------------------------*/
+.pl150 {
+    padding-left: 150px;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+#footer1 {
+    margin-top: 380px;
+}
+
+/*-------------------------register mian end----------------------------*/
+
+/*------------------------------footer----------------------------------*/
+#footer {
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+/*----------------------------footer end--------------------------------*/
+
+/*----------------------------leftBar--------------------------------*/
+#container{
+    height: 860px;
+}
+
+.cat {
+    width: 192px;
+    height: 700px;
+    float: left;
+}
+
+#content {
+    padding-right: 10px;
+    float: left;
+    width: 524px;
+}
+
+.sidebar {
+    width: 233px;
+    height: 100%;
+    float: left;
+}
+
+.cat-content {
+    height: 700px;
+    border-left: 1px rgba(205, 205, 205, 1.00) solid;
+    border-right: 1px rgba(205, 205, 205, 1.00) solid;
+    border-bottom: 1px rgba(205, 205, 205, 1.00) solid;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 0.52);
+}
+
+.cat li {
+    font-size: 12px;
+    width: 53px;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: dimgray;
+    float: left;
+    font-size-adjust: none;
+    font-stretch: normal;
+}
+
+#main {
+    width: 100%;
+    height: 643px;
+}
+
+#left-ul-header {
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    color: darkorange;
+    font-size-adjust: none;
+    font-stretch: normal;
+    background-color: rgba(233, 233, 233, 1.00);
+    width: 177px;
+    height: 20px;
+    border-top: 1px rgba(205, 205, 205, 1.00) solid;
+    border-bottom: 1px rgba(205, 205, 205, 1.00) solid;
+}
+
+#cat-img {
+    height: 30px;
+}
+
+/*----------------------------leftBar end--------------------------------*/
+
+/*----------------------------center-------------------------------------*/
+#index-header {
+    box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 0.52);
+    border-radius: 8px;
+}
+
+.content-top {
+    height: 190px;
+    width: 524px;
+    margin-left: 8px;
+    box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 0.52);
+    overflow: hidden;
+}
+
+.list {
+    position: relative;
+    z-index: -1;
+    width: 3144px;
+    height: 190px;
+}
+
+.list img{
+    float: left;
+    border-radius: 5px;
+}
+
+.button {
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    z-index: 2;
+    bottom: 20px;
+    left: 900px;
+    top: 310px;
+}
+
+.button span {
+    cursor: pointer;
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.button .on {
+    background: orangered;
+}
+
+.arrow {
+    cursor: pointer;
+    display: none;
+
+    line-height: 39px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.arrow:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.content-top:hover .arrow {
+    display: block;
+}
+
+.prev {
+    left: 663px;
+}
+
+.next {
+    right: 717px;
+}
+
+.content-list {
+    padding: 0px 0px 10px 0px;
+    height: 490px;
+    text-align: center;
+    width: 524px;
+    font-size: 12px;
+    border: 1px rgba(205, 205, 205, 1.00) solid;
+    border-radius: 8px;
+    box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 0.52);
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.content-list dl {
+    height: 134px;
+    width: 174px;
+    float: left;
+}
+
+.conten-list dt {
+    height: 91px;
+    line-height: 91px;
+}
+
+.content-list dt img {
+    border: 1px rgba(224, 224, 224, 1.00) solid;
+    vertical-align: middle;
+}
+
+.content-list dd {
+    height: 43px;
+    padding: 0px;
+    margin: 0px;
+}
+/*----------------------------center end-------------------------------------*/
+
+/*----------------------------right bar-------------------------------------*/
+.r1 {
+    height: 135px;
+    width: 233px;
+    margin-left: 18px;
+}
+
+.r2 {
+    height: 370px;
+    width: 233px;
+    margin-left: 18px;
+}
+
+.board {
+    height: 101px;
+    margin-top: -5px;
+    border: 1px rgba(204, 204, 204, 1.00) solid;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 0.52);
+}
+
+.board li {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.board img {
+    margin: 8px 0px 0px 10px;
+    border: 1px rgba(205, 205, 205, 1.00) solid;
+}
+
+.new {
+    margin-top: -5px;
+    border: 1px rgba(204, 204, 204, 1.00) solid;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 0.52);
+}
+
+.r2 dl {
+    width: 230px;
+    height: 60px;
+}
+
+.r2 dl dt {
+    padding: 2px 0px;
+    width: 95px;
+    text-align: center;
+    float: left;
+}
+
+.r2 dl dt img {
+    border: 1px rgba(205, 205, 205, 1.00) solid;
+    width: 60px;
+    height: 47px;
+    vertical-align: middle;
+}
+
+.r2 dl dd a {
+    font-size: 14px;
+    font-stretch: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.r3 {
+    margin-left: 18px;
+}
+
+#bar-body {
+    height: 154px;
+    width: 231px;
+    margin-top: -5px;
+    border: 1px rgba(204, 204, 204, 1.00) solid;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 0.52);
+}
+
+#bar-body dl {
+    float: left;
+}
+
+#bar-body dl dt {
+    padding: 2px 0px;
+    width: 95px;
+    text-align: center;
+    float: left;
+}
+
+#bar-body dl dt img {
+    border: 1px rgba(205, 205, 205, 1.00) solid;
+    width: 60px;
+    height: 47px;
+    vertical-align: middle;
+}
+
+#bar-body dl dd {
+    margin-left: 100px;
+    width: 120px;
+}
+
+#bar-body dl dd a {
+    font-size: 14px;
+    font-stretch: normal;
+    text-decoration: none;
+    color: black;
+}
+/*----------------------------righr bar end-------------------------------------*/

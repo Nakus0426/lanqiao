@@ -1,0 +1,152 @@
+.container {
+    width: 980px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+body {
+    font: 12px/normal Tahoma;
+    font-size-adjust: none;
+    font-stretch: normal;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style-position: outside;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+.bottom {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    line-height: 20px;
+    clear: both;
+    float: left;
+}
+
+a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+.in {
+    text-align: center;
+}
+
+div.infor {
+    width: 973px;
+    height: 538px;
+    margin-left: 3px;
+    margin-top: 10px;
+    padding-top: 50px;
+    background-image: url("../images/catlist_bg.gif");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+    box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 0.52);
+    border-radius: 8px;
+}
+
+.w20p {
+    width: 20%;
+}
+
+.infor ul {
+    float: left;
+}
+
+.infor h3 {
+    line-height: 24px;
+    border-bottom-color: rgb(204, 204, 204);
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+}
+
+input {
+    width: 131px;
+    height: 17px;
+    vertical-align: middle;
+    border-top-color: rgb(204, 204, 204);
+    border-right-color: rgb(204, 204, 204);
+    border-left-color: rgb(204, 204, 204);
+    border-bottom-color: rgb(204, 204, 204);
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+}
+
+.infor input {
+    width: auto;
+    height: auto;
+    border-top-color: currentColor;
+    border-right-color: currentColor;
+    border-left-color: currentColor;
+    border-bottom-color: currentColor;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
+li {
+    list-style-type: none;
+    list-style-position: outside;
+    list-style-image: none;
+}
+
+.infor ul li {
+    height: 120px;
+    line-height: 120px;
+    border-bottom-color: rgb(204, 204, 204);
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+}
+
+.w20p {
+    width: 20%;
+}
+
+.infor ul {
+    float: left;
+}
+
+.w50p {
+    width: 50%;
+}
+
+ul.info li {
+    line-height: 30px;
+}
+
+.w10p {
+    width: 10%;
+}
+
+ul.price li {
+    line-height: 30px;
+}

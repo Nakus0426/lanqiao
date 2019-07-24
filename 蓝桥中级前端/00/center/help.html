@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贵美帮助中心</title>
+    <script src="../jquery-2.2.4.js"></script>
+    <script>
+        function newTime(){
+            now = new Date();
+            document.write(now.getYear()+"年"+(now.getMonth()+1)+"月"+ now.getDate()+"日"+now.getHours()+"时"+now.getMinutes()+"分"+now.getSeconds()+"秒");
+        }
+        $(function () {
+            $(".a").click(function () {
+                $(".center1").load("enrol.html");
+            });
+        })
+        $(function () {
+            $(".a1").click(function () {
+                $(".center1").load("buy.html");
+            });
+        })
+        $(function () {
+            $(".a2").click(function () {
+                $(".center1").load("seller.html");
+            });
+        })
+    </script>
+    <style>
+        .container{
+            margin: 0px auto;
+            width: 980px;
+        }
+        body{
+            font: 12px/normal Tahoma;
+            font-size-adjust: none;
+            font-stretch: normal;
+        }
+        .header{
+            background: url("../images/h_bg.jpg") no-repeat -22px 0px;
+            width: 100%;
+            height: 136px;
+        }
+        .log{
+            background: url("../images/h_bg.jpg") no-repeat -22px 0px;
+            width: 280px;
+            height: 100px;
+            float: left;
+        }
+        .menu{
+            padding: 13px 0px 0px;
+            width: 45%;
+            height: 28px;
+            float: right;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        .menu ul > li{
+            font: 12px/28px Tahoma;
+            float: left;
+            font-size-adjust: none;
+            font-stretch: normal;
+            list-style: none;
+        }
+        .text{
+            padding: 0px 5px;
+            text-align: center;
+        }
+        .my {
+            background: url("../images/icon.gif") no-repeat;
+            width: 28px;
+            height: 28px;
+        }
+        .pic2{
+            background-position: -40px 0px;
+        }
+        .pic3{
+             background-position: -80px 0px;
+         }
+        .pic4{
+            background-position: -120px 0px;
+        }
+        .btn{
+            background-position: 0px -25px;
+            width: 38px;
+        }
+        .btn{
+            padding: 0px 5px;
+            text-align: center;
+        }
+        .welcome{
+            margin-top: 60px;
+        }
+        .caption {
+            width: 100%;
+            float: left;
+        }
+        .caption ul{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        .caption ul >li{
+            width: 84px;
+            text-align: center;
+            font-weight: bold;
+            float: left;
+            list-style: none;
+        }
+        .caption li a{
+            padding: 8px 10px;
+            line-height: 30px;
+            font-size: 14px;
+            color: black;
+        }
+        .center{
+            background: url("../images/customer.jpg") no-repeat;
+            padding: 180px 13px 0px 0px;
+            width: 180px;
+            height: 370px;
+        }
+        .ft{
+            float: left;
+        }
+
+        .center a{
+            font: bold 14px/30px Tahoma;
+            text-align: center;
+            color: rgb(51,51,51);
+            font-size-adjust: none;
+            font-stretch: normal;
+        }
+        .center a{
+            margin: 0px auto;
+            width: 158px;
+            height: 31px;
+            overflow: hidden;
+            display: block;
+        }
+       .center a{
+            text-decoration: none;
+        }
+       .center a img{
+            float: left;
+            border: 0px currentColor;
+            border-image: none;
+        }
+        #reg{
+            padding: 15px;
+            border: 1px solid rgb(206,111,119);
+            border-image: none;
+            width: 748px;
+            height: 518px;
+            font-size: 16px;
+        }
+        .center a1{
+            font: bold 14px/30px Tahoma;
+            text-align: center;
+            color: rgb(51,51,51);
+            font-size-adjust: none;
+            font-stretch: normal;
+        }
+        .center a1{
+            margin: 0px auto;
+            width: 158px;
+            height: 31px;
+            overflow: hidden;
+            display: block;
+        }
+        .center a1{
+            text-decoration: none;
+        }
+        .center a1 img{
+            float: left;
+            border: 0px currentColor;
+            border-image: none;
+        }
+        .center a2{
+            font: bold 14px/30px Tahoma;
+            text-align: center;
+            color: rgb(51,51,51);
+            font-size-adjust: none;
+            font-stretch: normal;
+        }
+        .center a2{
+            margin: 0px auto;
+            width: 158px;
+            height: 31px;
+            overflow: hidden;
+            display: block;
+        }
+        .center a2{
+            text-decoration: none;
+        }
+        .center a2 img{
+            float: left;
+            border: 0px currentColor;
+            border-image: none;
+        }
+       #help,#help1,#help2{
+           text-align: center;
+       }
+         ul .a{
+            display: block !important;
+        }
+        ul .a1{
+            display: block !important;
+        }
+        ul .a2{
+            display: block !important;
+        }
+         #b li:not(:first-child){
+            display: none;
+        }
+         #b ul:hover li{
+            cursor: pointer;
+            display: block;
+            color: darkorange;
+        }
+        #b1 li:not(:first-child){
+            display: none;
+        }
+        #b1 ul:hover li{
+            cursor: pointer;
+            display: block;
+            color: darkorange;
+        }
+        #b2 li:not(:first-child){
+            display: none;
+        }
+        #b2 ul:hover li{
+            cursor: pointer;
+            display: block;
+            color: darkorange;
+        }
+        .center1{
+            width: 780px;
+            height: 550px;
+            overflow: hidden;
+        }
+
+        .change ul{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        .change ul>li{
+            background: url("../images/list_icon.gif") no-repeat;
+            padding-left: 15px;
+
+        }
+        .change ul>li:hover{
+            cursor: pointer;
+            color: darkorange;
+        }
+
+        .footer{
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            line-height: 20px;
+            clear: both;
+            float: left;
+        }
+        .footer a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="-ms-zoom: 100%">
+<div class="container">
+    <div class="header">
+        <div class="log"></div>
+        <div class="menu">
+            <ul>
+                <li class="my pic1"></li>
+                <li class="text">
+                    <a href="" target="_parent" style="text-decoration: none">购物车</a>
+                </li>
+                <li class="my pic2"></li>
+                <li class="text">
+                    <a href="" target="_parent" style="text-decoration: none">帮助中心</a>
+                </li >
+                <li class="my pic3"></li>
+                <li class="text">
+                    <a href="" target="_parent" style="text-decoration: none">加入收藏</a>
+                </li>
+                <li class="my pic4"></li>
+                <li class="text">
+                    <a href="" target="_parent" style="text-decoration: none">设为首页</a>
+                </li>
+                <li class="my btn text">
+                    <a href="" target="_parent"  style="text-decoration: none" >登录</a>
+                </li>
+                <li class="my btn text">
+                    <a href="" target="_parent"  style="text-decoration: none">注册</a>
+                </li>
+            </ul>
+            <div class="welcome">
+                <ul>
+                    <li class="text hello">
+                    你好，欢迎访问贵美商城！
+                        <script type="text/JavaScript">newTime();</script>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="caption">
+            <ul>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">首页</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">家用电器</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">数码相机</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">日用百货</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">书籍</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">帮助中心</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">免费开店</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">全球咨询</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <div class="center ft">
+            <div id="b">
+                <ul id="help">
+                    <li class="a" > <img  alt="alt" src="../images/reg.jpg" ></li>
+                    <li>点此注册</li>
+                    <li>认证中心</li>
+                </ul>
+            </div>
+            <div id="b1">
+                <ul id="help1">
+                    <li class="a1"><img  alt="alt" src="../images/buy.jpg" ></li>
+                    <li>咨询</li>
+                    <li>投诉</li>
+                    <li>举报</li>
+                    <li>退款</li>
+                </ul>
+            </div>
+           <div id="b2">
+               <ul id="help2">
+                   <li class="a2"><img alt="" src="../images/sale.jpg" ></li>
+                   <li>安全中心</li>
+                   <li>流物中心</li>
+                   <li>资金流动</li>
+                   <li>纠纷处理</li>
+               </ul>
+           </div>
+
+            <a href=""><img src="../images/person.jpg" alt=""></a>
+        </div>
+        <div class="center1 ft">
+            <div id="reg">
+                <h2 >知识堂首页 > > 注册&认证</h2>
+                <img src="../images/reg_line.jpg" alt="">
+                <p>
+                    享受贵美网免费网上交易乐趣，并且在超人气的社区尽情交流您的网上购物经验，您需要先注册成为贵美的会员，具体的步骤如下：
+                </p>
+                <p>
+                    <img src="../images/reg_step.jpg" alt="">
+                </p>
+                <div class="change">
+                    <ul>
+                        <li>如何激活会员名？</li>
+                        <li>如何注册贵美会员？</li>
+                        <li>注册时密码设置有什么要求？</li>
+                        <li>贵美认证</li>
+                        <li>为什么效验码明明是对的，却提示我输入错误?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="footer">
+        友情连接：
+        <a href="https://www.baidu.com" style="color: black ">百度</a>|
+        <a href="https://www.google.cn" style="color: black ">Google</a>|
+        <a href="https://www.yahoo.com" style="color: black ">雅虎</a>|
+        <a href="https://www.taobao.com" style="color: black ">淘宝</a>|
+        <a href="https://shop71949328.taobao.com" style="color: black ">拍拍</a>|
+        <a href="http://www.eachnet.com" style="color: black ">易趣</a>|
+        <a href="https://login.dangdang.com" style="color: black ">当当</a>|
+        <a href="https://www.jd.com" style="color: black ">京东商城</a>|
+        <a href="https://www.xunlei.com" style="color: black ">迅雷</a>|
+        <a href="https://www.sina.com.cn" style="color: black ">新浪</a>|
+        <a href="https://www.163.com" style="color: black ">网易</a>|
+        <a href="http://www.sohu.com" style="color: black ">搜狐</a>|
+        <a href="" style="color: black ">猫扑</a>|
+        <a href="" style="color: black ">开心网</a>|
+        <a href="" style="color: black ">新华网</a>|
+        <a href="" style="color: black ">凤凰网</a>
+        <br>
+        <hr/>
+        COPYRIGHT @ 2003-2010
+        <a href="" style="color: black ">北京市贵美商城有限公司</a>
+        ALL RIGHT RESERVED
+        <br>
+        热线： 400-66-13060 Email:service@prd.com
+        <br>
+        ICP:
+        <a href="" style="color: black ">泸ICP备０５２１１０４号</a>
+        <br>
+        <img src="../images/img1.gif" alt="">
+        <img src="../images/img2.gif" alt="">
+        <img src="../images/img3.gif" alt="">
+        <img src="../images/img4.gif" alt="">
+    </div>
+</div>
+</body>
+</html>

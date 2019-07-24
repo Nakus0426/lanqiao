@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>贵美商城</title>
+    <script src="jquery-2.2.4.js"></script>
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+    <iframe width="980px" height="130" id="index-header" src="header.html" frameborder="0" scrolling="no"></iframe>
+
+    <form id="from1">
+        <table class="reg" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="a_r w15p">
+                    <label for="fname">名字：</label>
+                </td>
+                <td class="w500">
+                    <input name="fname" id="fname" type="text">
+                </td>
+                <td class="protocol" rowspan="11">
+                    <h4><img src="images/read.gif">阅读贵美网协议</h4>
+                    <textarea name="textarea" rows="15" cols="35">
+							欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Gmgw.com网站的各种工具和服务。
+							
+  							本服务协议双方为贵美与贵美网用户，本服务协议具有合同效力。
+							
+  							贵美的权利和义务:
+    						1.贵美有义务在现有技术上维护整个网上交易平台的正常运行，并努力提升和改进技术，使用户网上交易活动的顺利。 
+    						2.对用户在注册使用贵美网上交易平台中所遇到的与交易或注册有关的问题及反映的情况，贵美应及时作出回复。 
+    						3.对于在贵美网网上交易平台上的不当行为或其它任何贵美认为应当终止服务的情况，贵美有权随时作出删除相关信息、终止服务提供等处理，而无须征得用户的同意。 
+    						4.因网上交易平台的特殊性，贵美没有义务对所有用户的注册资料、所有的交易行为以及与交易有关的其他事项进行事先审查。
+						</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="a_r"><label for="lname">姓氏：</label></td>
+                <td><input name="lname" id="lname" type="text"></td>
+            </tr>
+            <tr>
+                <td class="a_r"><label for="sname">登录名：</label></td>
+                <td><input name="sname" id="sname" type="text"></td>
+            </tr>
+            <tr>
+                <td class="a_r"><label for="pass">密码：</label></td>
+                <td><input name="pass" id="pass" type="text">（至少包含6个字符）</td>
+            </tr>
+            <tr>
+                <td class="a_r"><label for="rpass">再次输入密码：</label></td>
+                <td><input name="rpass" id="rpass" type="text"></td>
+            </tr>
+            <tr>
+                <td class="a_r"><label for="email">电子邮箱：</label></td>
+                <td><input name="email" id="email" type="text">（必须包含@字符）</td>
+            </tr>
+            <tr>
+                <td class="a_r"><label for="gender">性别：</label></td>
+                <td>
+                    <input name="gender" class="b0" id="gender" type="radio" value="男">
+                    <img src="images/Male.gif"> 男&#8195&#8195&#8195
+                    <input name="gender" class="b0" type="radio" value="女">
+                    <img src="images/Female.gif"> 女
+                </td>
+            </tr>
+            <tr>
+                <td class="a_r"><label for="icon">头像：</label></td>
+                <td><input name="icon" id="icon" type="file" style="width: 170px;height: 23px"></td>
+            </tr>
+            <tr>
+                <td class="a_r"><label for="hobby">爱好：</label></td>
+                <td>
+                    <input name="hobby1" id="hobby" class="b0" type="checkbox" value="checkbox"> 运动&#8195
+                    <input name="hobby2" class="b0" type="checkbox" value="checkbox"> 聊天&#8195
+                    <input name="hobby3" class="b0" type="checkbox" value="checkbox"> 玩游戏
+                </td>
+            </tr>
+            <tr>
+                <td class="a_r"><label for="birth">出生日期：</label></td>
+                <td><input type="text" id="birth"></td>
+            </tr>
+            <tr>
+                <td class="pl150" colspan="2">
+                    <input name="submit" class="b0" type="image" src="images/submit.gif">
+                    <img class="hand" alt="重置" src="images/reset.gif">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="gw--datetimepicker">
+        <header id="gw--datetimepicker-header">
+            <ul>
+                <li id="gw--datetimepicker-prev">&lt;</li>
+                <li id="gw--datetimepicker-selected-year">0000</li>
+                <li id="gw--datetimepicker-selected-month">00</li>
+                <li id="gw--datetimepicker-next">&gt;</li>
+            </ul>
+        </header>
+        <div id="gw--datetimepicker-body" data-selected="day">
+            <div id="gw--datetimepicker-year" class="gw--datetimepicker-box" style="display: none;">
+                <table>
+                    <tbody id="gw--datetimepicker-year-body"></tbody>
+                </table>
+            </div>
+            <div id="gw--datetimepicker-month" class="gw--datetimepicker-box" style="display: none;">
+                <table>
+                    <tbody id="gw--datetimepicker-month-body">
+                    <tr>
+                        <td class="gw--month">1</td>
+                        <td class="gw--month">2</td>
+                        <td class="gw--month">3</td>
+                        <td class="gw--month">4</td>
+                    </tr>
+                    <tr>
+                        <td class="gw--month">5</td>
+                        <td class="gw--month">6</td>
+                        <td class="gw--month">7</td>
+                        <td class="gw--month">8</td>
+                    </tr>
+                    <tr>
+                        <td class="gw--month">9</td>
+                        <td class="gw--month">10</td>
+                        <td class="gw--month">11</td>
+                        <td class="gw--month">12</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="gw--datetimepicker-day" class="gw--datetimepicker-box" style="display: block;">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>日</th>
+                        <th>一</th>
+                        <th>二</th>
+                        <th>三</th>
+                        <th>四</th>
+                        <th>五</th>
+                        <th>六</th>
+                    </tr>
+                    </thead>
+                    <tbody id="gw--datetimepicker-day-body"></tbody>
+                </table>
+            </div>
+        </div>
+        <footer id="gw--datetimepicker-footer">
+            <button id="gw--now">今天</button>
+        </footer>
+    </div>
+
+    <iframe width="980" height="170" id="footer1" src="footer.html" frameborder="0" scrolling="no">
+    </iframe>
+</div>
+</body>
+<script src="js/dateTimePicker.js"></script>
+<script>
+    $(function () {
+        $('#birth').click(function () {
+            $('#gw--datetimepicker').toggle(300);
+        });
+    })
+</script>
+</html>

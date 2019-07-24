@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品分类</title>
+    <script src="../jquery-2.2.4.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
+    <meta name="keywords" content="局部图片广大" />
+    <meta name="description" content="局部图片广大" />
+    <script type="text/javascript" src="js/mzp-packed.js"></script>
+    <link href="css/lrtk.css" type="text/css" rel="stylesheet">
+    <link href="css/magiczoomplus.css" type="text/css" rel="stylesheet">
+    <script type="text/JavaScript" >
+        $(function(){
+            var oDiv1 = $("#div1");
+            var oSpan = oDiv1.find("span")[0];
+            var oMark = oDiv1.find("#mark");
+            var oDiv2 = $("#div2");
+            var oImg = oDiv2.find("img");
+            oDiv1.on("mouseover",function(){
+                $(oSpan).show();
+                $(oDiv2).show();
+            })
+            oDiv1.on("mouseout",function(){
+                $(oSpan).hide();
+                $(oDiv2).hide();
+            })
+            oDiv1.on("mousemove",function(ev){
+                var ev = ev || window.event;
+                var L = ev.clientX - oDiv1[0].offsetLeft -  oSpan.offsetWidth/2;
+                var T = ev.clientY - oDiv1[0].offsetTop - oSpan.offsetHeight/2;
+                if(L < 0){
+                    L = 0;
+                }else if(L > oDiv1[0].offsetWidth - oSpan.offsetWidth){
+                    L = oDiv1[0].offsetWidth - oSpan.offsetWidth;
+                }
+                if(T < 0){
+                    T = 0;
+                }else if(T > oDiv1[0].offsetHeight - oSpan.offsetHeight){
+                    T = oDiv1[0].offsetHeight - oSpan.offsetHeight;
+                }
+                $(oSpan).css({
+                    left:L+"px",
+                    top:T+"px"
+                })
+                var scaleX = L/(oDiv1[0].offsetWidth - oSpan.offsetWidth);
+                var scaleY = T/(oDiv1[0].offsetHeight - oSpan.offsetHeight);
+                console.log(-scaleX * (oImg[0].offsetWidth - oDiv2[0].offsetWidth)+"px");
+                $(oImg).css({
+                    left:-scaleX * (oImg[0].offsetWidth - oDiv2[0].offsetWidth)+"px",
+                    top:-scaleY * (oImg[0].offsetHeight - oDiv2[0].offsetHeight)+"px"
+                })
+            })
+        })
+        //访问次数自动增加次数
+        function visit() {
+            if (localStorage.pagecount){
+                localStorage.pagecount=Number(localStorage.pagecount) +1;
+            }else{
+                localStorage.pagecount=1;}document.write( localStorage.pagecount + " 次");
+        }
+        function newTime(){
+            now = new Date();
+            document.write(now.getYear()+"年"+(now.getMonth()+1)+"月"+ now.getDate()+"日"+now.getHours()+"时"+now.getMinutes()+"分"+now.getSeconds()+"秒");
+        }
+        $(function () {
+
+            // $('.tip-box').hide();
+
+
+            $('#tip').hover(function () {
+                    let position = $(this).position();
+                    let width = $(this).width() + position.left;
+                    let height = $(this).height() + position.top;
+                    $('.tip-box').css({position:'absolute',top:height + 'px',left:width + 'px'});
+                    $('.tip-box').show();
+                }, function () {
+                    $('.tip-box').hide();
+                }
+            )
+        })
+    </script>
+    <style>
+        .container{
+            margin: 0px auto;
+            width: 980px;
+        }
+        body{
+            font: 12px/normal Tahoma;
+            font-size-adjust: none;
+            font-stretch: normal;
+        }
+        .header{
+            background: url("../images/h_bg.jpg") no-repeat -22px 0px;
+            width: 100%;
+            height: 136px;
+        }
+        .log{
+            background: url("../images/h_bg.jpg") no-repeat -22px 0px;
+            width: 280px;
+            height: 100px;
+            float: left;
+        }
+        .menu{
+            padding: 13px 0px 0px;
+            width: 45%;
+            height: 28px;
+            float: right;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        .menu ul > li{
+            font: 12px/28px Tahoma;
+            float: left;
+            font-size-adjust: none;
+            font-stretch: normal;
+            list-style: none;
+        }
+        .text{
+            padding: 0px 5px;
+            text-align: center;
+        }
+        .my {
+            background: url("../images/icon.gif") no-repeat;
+            width: 28px;
+            height: 28px;
+        }
+        .pic2{
+            background-position: -40px 0px;
+        }
+        .pic3{
+            background-position: -80px 0px;
+        }
+        .pic4{
+            background-position: -120px 0px;
+        }
+        .btn{
+            background-position: 0px -25px;
+            width: 38px;
+        }
+        .btn{
+            padding: 0px 5px;
+            text-align: center;
+        }
+        .welcome{
+            margin-top: 60px;
+        }
+        .caption {
+            width: 100%;
+            float: left;
+        }
+        .caption ul{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        .caption ul >li{
+            width: 84px;
+            text-align: center;
+            font-weight: bold;
+            float: left;
+            list-style: none;
+        }
+        .caption li a{
+            padding: 8px 10px;
+            line-height: 30px;
+            font-size: 14px;
+            color: black;
+        }
+        .center{
+
+        }
+        .center ul{
+            width: 350px;
+            padding-right: 35px;
+        }
+        .ft{
+            float: left;
+        }
+        #div1 span{
+            width:100px;
+            height:100px;
+            background:yellow;
+            opacity:0.5;
+            filter:alpha(opacity=50);
+            position:absolute;
+            left:0;
+            top:0;
+            display:none;
+        }
+
+        #div2 img{
+            position:absolute;
+        }
+
+        ul{
+            padding: 0px;
+            margin: 0px;
+        }
+        li{
+            list-style: none;
+        }
+
+        .clear{
+            clear: both;
+        }
+        .op{
+            width: 175px;
+            padding-top: 0px;
+        }
+        .good{
+            margin: 0px 100px;
+            line-height: 30px;
+            letter-spacing: 0.5px;
+        }
+        .buy{
+            padding-top: 20px;
+        }
+        .online{
+            margin: 20px 0px;
+            border: 1px solid darkorange;
+            width: 350px;
+            height: 80px;
+            text-align: center;
+            background-color: lightyellow;
+        }
+        #contactme{
+            margin-top: 15px;
+        }
+        .footer{
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            line-height: 20px;
+            clear: both;
+            float: left;
+        }
+        .footer a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="-ms-zoom: 100%">
+<div class="container">
+    <div class="header">
+        <div class="log"></div>
+        <div class="menu">
+            <ul>
+                <li class="my pic1"></li>
+                <li class="text">
+                    <a href="" target="_parent" style="text-decoration: none">购物车</a>
+                </li>
+                <li class="my pic2"></li>
+                <li class="text">
+                    <a href="" target="_parent" style="text-decoration: none">帮助中心</a>
+                </li >
+                <li class="my pic3"></li>
+                <li class="text">
+                    <a href="" target="_parent" style="text-decoration: none">加入收藏</a>
+                </li>
+                <li class="my pic4"></li>
+                <li class="text">
+                    <a href="" target="_parent" style="text-decoration: none">设为首页</a>
+                </li>
+                <li class="my btn text">
+                    <a href="" target="_parent"  style="text-decoration: none" >登录</a>
+                </li>
+                <li class="my btn text">
+                    <a href="" target="_parent"  style="text-decoration: none">注册</a>
+                </li>
+            </ul>
+            <div class="welcome">
+                <ul>
+                    <li class="text hello">
+                        你好，欢迎访问贵美商城！
+                        <script type="text/JavaScript">newTime();</script>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="caption">
+            <ul>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">首页</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">家用电器</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">数码相机</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">日用百货</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">书籍</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">帮助中心</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">免费开店</a>
+                </li>
+                <li>
+                    <a href="" target="_parent" style="text-decoration: none">全球咨询</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="center">
+        <h1 style="text-align: center">联想Y450A-TFO(NBA纪念版) 512独显超强性价比</h1>
+        <hr>
+
+        <ul class="ft" id="show">
+            <div class="box">
+                <div class="left-pro">
+                    <div class="t2">
+                    <a href="../images/show1_big.jpg" id="zoom1" class="MagicZoom MagicThumb"><img src="../images/show1_big.jpg" id="main_img" class="main_img" style="width:400px; height:400px;" /></a>
+                    </div>
+                        <div id="showArea">
+                            <ul>
+                                <li> <a href="../images/show1_big.jpg" rel="zoom1" rev="../images/show1_big.jpg"><img src="../images/show1.jpg" /></a></li>
+                                <li><a href="../images/show2_big.jpg" rel="zoom1" rev="../images/show2_big.jpg"><img src="../images/show2.jpg" /></a></li>
+                                <li><a href="../images/show3_big.jpg" rel="zoom1" rev="../images/show3_big.jpg"><img src="../images/show5.jpg" /></a></li>
+                                <li><a href="../images/show4_big.jpg" rel="zoom1" rev="../images/show4_big.jpg"><img src="../images/show4.jpg" /></a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <script type="text/javascript" src="js/lrtk.js"></script>
+            <li class="op clear ft">
+                <a href="">
+                    <img src="../images/share.gif" alt="">
+                </a>
+            </li>
+            <li class="op  ft">
+                <a href="">
+                    <img src="../images/favthis.gif" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="good ft">
+            <li>
+                一口价：
+                <span>80.00元</span>
+            </li>
+            <hr>
+            <li>
+                运 费：
+                <span>免运费</span>
+            </li>
+            <hr >
+            <li class="buy">
+                <a href=""><img src="../images/buynow.gif" alt=""></a>
+            </li>
+            <li class="online">
+                <p>
+                    <img src="../images/onlinepay.gif" alt="">
+                    此商品支持网银支付，网上汇款免手续费。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    收货满意后出售者才能拿钱，货款都安全！
+                </p>
+
+            </li>
+            <li>
+                剩余时间：
+                <span>10天23小时</span>
+            </li>
+            <hr >
+            <li>
+                本期售出：
+                <span>2件</span>
+            </li>
+            <hr >
+            <li>
+                累计售出：
+                <span>8件</span>
+            </li>
+            <hr >
+            <li>
+                商品类型：
+                <span>全新</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                所在地：
+                <span>山西太原</span>
+            </li>
+            <hr >
+            <li>
+                商品数量：
+                <span>1件</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                浏览次数：
+                <script type="text/JavaScript">visit();</script>
+            </li>
+            <hr >
+            <li id="contactme">
+                <img src="../images/contactme.gif" alt="">
+            </li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="footer" >
+        友情连接：
+        <a href="https://www.baidu.com" style="color: black ">百度</a>|
+        <a href="https://www.google.cn" style="color: black ">Google</a>|
+        <a href="https://www.yahoo.com" style="color: black ">雅虎</a>|
+        <a href="https://www.taobao.com" style="color: black ">淘宝</a>|
+        <a href="https://shop71949328.taobao.com" style="color: black ">拍拍</a>|
+        <a href="http://www.eachnet.com" style="color: black ">易趣</a>|
+        <a href="https://login.dangdang.com" style="color: black ">当当</a>|
+        <a href="https://www.jd.com" style="color: black ">京东商城</a>|
+        <a href="https://www.xunlei.com" style="color: black ">迅雷</a>|
+        <a href="https://www.sina.com.cn" style="color: black ">新浪</a>|
+        <a href="https://www.163.com" style="color: black ">网易</a>|
+        <a href="http://www.sohu.com" style="color: black ">搜狐</a>|
+        <a href="" style="color: black ">猫扑</a>|
+        <a href="" style="color: black ">开心网</a>|
+        <a href="" style="color: black ">新华网</a>|
+        <a href="" style="color: black ">凤凰网</a>
+        <br>
+        <hr/>
+        COPYRIGHT @ 2003-2010
+        <a href="" style="color: black ">北京市贵美商城有限公司</a>
+        ALL RIGHT RESERVED
+        <br>
+        热线： 400-66-13060 Email:service@prd.com
+        <br>
+        ICP:
+        <a href="" style="color: black ">泸ICP备０５２１１０４号</a>
+        <br>
+        <img src="../images/img1.gif" alt="">
+        <img src="../images/img2.gif" alt="">
+        <img src="../images/img3.gif" alt="">
+        <img src="../images/img4.gif" alt="">
+    </div>
+
+</div>
+</body>
+</html>

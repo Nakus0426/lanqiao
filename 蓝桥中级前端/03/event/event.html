@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+    <script src="../jquery-2.2.4.js"></script>
+
+    <script>
+        $(function () {
+            $('.foo').mouseover(function () {
+                $(this).css({
+                    "background": '#654ea3',
+                    "background": "-webkit-linear-gradient(to right, #eaafc8, #654ea3)",
+                    "background": "linear-gradient(to right, #eaafc8, #654ea3)"
+                });
+            }).mouseout(function () {
+                $(this).css({"background": 'none'});
+            })
+
+            $('#user').mouseover(function () {
+                $(this).css({"background-color": 'red'});
+            }).mouseout(function () {
+                $(this).css({"background-color": 'white'});
+            })
+
+            $('textarea').mouseover(function () {
+                $(this).css({"background-color": 'red'});
+            }).mouseout(function () {
+                $(this).css({"background-color": 'white'});
+            })
+        })
+    </script>
+    <style>
+        .input {
+            position: relative;
+            width: 120.38px;
+        }
+
+        input {
+            width: 6.5em;
+            color: white;
+            font-size: inherit;
+            font-family: inherit;
+            background-color: #E1E1E1;
+            padding: 0.35em 0.45em;
+            border: 1px solid transparent;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input::placeholder {
+            color: hsla(0, 0%, 100%, 0.6);
+        }
+
+        span {
+            position: absolute;
+            background-color: lightskyblue;
+            transform-origin: center;
+            transition: transform 0.5s ease;
+        }
+
+        .bottom,
+        .top {
+            height: 1px;
+            left: 0;
+            right: 0;
+            transform: scaleX(0);
+        }
+
+        .left,
+        .right {
+            width: 1px;
+            top: 0;
+            bottom: 0;
+            transform: scaleY(0);
+        }
+
+        .top {
+            top: 0;
+        }
+
+        .bottom {
+            bottom: 0;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
+
+        input:focus ~ .top, input:focus ~ .bottom {
+            transform: scaleX(1);
+        }
+
+        input:focus ~ .left, input:focus ~ .right {
+            transform: scaleY(1);
+        }
+
+    </style>
+</head>
+<body>
+<div class="foo">
+    当用户在一个元素中进行文本选择时，这个元素上的select事件就会被触发。
+    此事件只能用在<input id="user" type="text"> 和 <br><br> <textarea rows="5" cols="30"></textarea>。
+</div>
+
+<div class="input">
+    <input type="text" placeholder="Input Outline">
+    <span class="bottom"></span>
+    <span class="right"></span>
+    <span class="top"></span>
+    <span class="left"></span>
+</div>
+</body>
+</html>

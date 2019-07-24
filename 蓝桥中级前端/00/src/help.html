@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贵美帮助中心</title>
+    <script src="jquery-2.2.4.js"></script>
+    <link rel="stylesheet" href="css/layout.css">
+    <script>
+        function newTime() {
+            now = new Date();
+            document.write(now.getYear() + "年" + (now.getMonth() + 1) + "月" + now.getDate() + "日" + now.getHours() + "时" + now.getMinutes() + "分" + now.getSeconds() + "秒");
+        }
+
+        $(function () {
+            $(".a").click(function () {
+                $(".center1").load("enrol.html");
+            });
+        });
+        $(function () {
+            $(".a1").click(function () {
+                $(".center1").load("buy.html");
+            });
+        });
+        $(function () {
+            $(".a2").click(function () {
+                $(".center1").load("seller.html");
+            });
+        })
+    </script>
+    <style>
+        .container {
+            margin: 0px auto;
+            width: 980px;
+        }
+
+        body {
+            font: 12px/normal Tahoma;
+            font-size-adjust: none;
+            font-stretch: normal;
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .center {
+            background: url("images/customer.jpg") no-repeat;
+            padding: 180px 13px 0px 0px;
+            margin-top: 8px;
+            width: 167px;
+            height: 370px;
+            box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 0.52);
+        }
+
+        .ft {
+            float: left;
+        }
+
+        .center a {
+            font: bold 14px/30px Tahoma;
+            text-align: center;
+            color: rgb(51, 51, 51);
+            font-size-adjust: none;
+            font-stretch: normal;
+        }
+
+        .center a {
+            margin: 0px auto;
+            width: 158px;
+            height: 31px;
+            overflow: hidden;
+            display: block;
+        }
+
+        .center a {
+            text-decoration: none;
+        }
+
+        .center a img {
+            float: left;
+            border: 0px currentColor;
+            border-image: none;
+        }
+
+        #reg {
+            padding: 15px;
+            border: 1px solid rgb(206, 111, 119);
+            border-radius: 8px;
+            border-image: none;
+            width: 748px;
+            height: 518px;
+            font-size: 16px;
+        }
+
+        .center a1 {
+            font: bold 14px/30px Tahoma;
+            text-align: center;
+            color: rgb(51, 51, 51);
+            font-size-adjust: none;
+            font-stretch: normal;
+        }
+
+        .center a1 {
+            margin: 0px auto;
+            width: 158px;
+            height: 31px;
+            overflow: hidden;
+            display: block;
+        }
+
+        .center a1 {
+            text-decoration: none;
+        }
+
+        .center a1 img {
+            float: left;
+            border: 0px currentColor;
+            border-image: none;
+        }
+
+        .center a2 {
+            font: bold 14px/30px Tahoma;
+            text-align: center;
+            color: rgb(51, 51, 51);
+            font-size-adjust: none;
+            font-stretch: normal;
+        }
+
+        .center a2 {
+            margin: 0px auto;
+            width: 158px;
+            height: 31px;
+            overflow: hidden;
+            display: block;
+        }
+
+        .center a2 {
+            text-decoration: none;
+        }
+
+        .center a2 img {
+            float: left;
+            border: 0px currentColor;
+            border-image: none;
+        }
+
+        #help, #help1, #help2 {
+            text-align: center;
+        }
+
+        ul .a {
+            display: block !important;
+        }
+
+        ul .a1 {
+            display: block !important;
+        }
+
+        ul .a2 {
+            display: block !important;
+        }
+
+        #b li:not(:first-child) {
+            display: none;
+        }
+
+        #b ul:hover li {
+            cursor: pointer;
+            display: block;
+            color: darkorange;
+        }
+
+        #b1 li:not(:first-child) {
+            display: none;
+        }
+
+        #b1 ul:hover li {
+            cursor: pointer;
+            display: block;
+            color: darkorange;
+        }
+
+        #b2 li:not(:first-child) {
+            display: none;
+        }
+
+        #b2 ul:hover li {
+            cursor: pointer;
+            display: block;
+            color: darkorange;
+        }
+
+        .center1 {
+            width: 780px;
+            height: 550px;
+            overflow: hidden;
+            margin-left: 18px;
+            margin-top: 8px;
+            box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 0.52);
+            border-radius: 8px;
+        }
+
+        .change ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .change ul > li {
+            background: url("images/list_icon.gif") no-repeat;
+            padding-left: 15px;
+
+        }
+
+        .change ul > li:hover {
+            cursor: pointer;
+            color: darkorange;
+        }
+    </style>
+
+</head>
+<body style="-ms-zoom: 100%">
+<div class="container">
+    <iframe width="980px" height="130" id="index-header" src="header.html" frameborder="0" scrolling="no"></iframe>
+    <div class="center ft">
+        <div id="b">
+            <ul id="help">
+                <li class="a"><img alt="alt" src="images/reg.jpg"></li>
+                <li>点此注册</li>
+                <li>认证中心</li>
+            </ul>
+        </div>
+        <div id="b1">
+            <ul id="help1">
+                <li class="a1"><img alt="alt" src="images/buy.jpg"></li>
+                <li>咨询</li>
+                <li>投诉</li>
+                <li>举报</li>
+                <li>退款</li>
+            </ul>
+        </div>
+        <div id="b2">
+            <ul id="help2">
+                <li class="a2"><img alt="" src="images/sale.jpg"></li>
+                <li>安全中心</li>
+                <li>流物中心</li>
+                <li>资金流动</li>
+                <li>纠纷处理</li>
+            </ul>
+        </div>
+
+        <a href=""><img src="images/person.jpg" alt=""></a>
+    </div>
+    <div class="center1 ft">
+        <div id="reg">
+            <h2>知识堂首页 > > 注册&认证</h2>
+            <img src="images/reg_line.jpg" alt="">
+            <p>
+                享受贵美网免费网上交易乐趣，并且在超人气的社区尽情交流您的网上购物经验，您需要先注册成为贵美的会员，具体的步骤如下：
+            </p>
+            <p>
+                <img src="images/reg_step.jpg" alt="">
+            </p>
+            <div class="change">
+                <ul>
+                    <li>如何激活会员名？</li>
+                    <li>如何注册贵美会员？</li>
+                    <li>注册时密码设置有什么要求？</li>
+                    <li>贵美认证</li>
+                    <li>为什么效验码明明是对的，却提示我输入错误?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <iframe width="980" height="170" id="footer1" src="footer.html" frameborder="0" scrolling="no">
+    </iframe>
+</div>
+</body>
+</html>

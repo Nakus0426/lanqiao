@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <title>过滤器查找</title>
     <script src="../jquery-2.2.4.js"></script>
+    <style>
+        body {
+            margin-left: 50px;
+        }
+
+        .buydetail {
+            width: 500px;
+            border: 2px solid mistyrose;
+            border-collapse: collapse;
+        }
+
+        .buydetail tr {
+            height: 30px;
+        }
+
+        .buydetail td, th {
+            text-align: center;
+        }
+
+        td:empty {
+            background-color: darkgray;
+        }
+
+        .table-header {
+            background-color: burlywood;
+        }
+
+        .table-row {
+            background-color: #E1E1E1;
+        }
+    </style>
+
     <script>
-        
+        $(function () {
+            $('.buydetail tr:eq(0)').addClass('table-header');
+            $('.buydetail tr:first').css({"color": 'gray'});
+
+            $('.buydetail tr td').each(function () {
+                if ($(this).hasClass('month')) {
+                    $(this).addClass('table-row');
+                }
+            })
+
+            $('.buydetail tr td').filter("td:contains('删除')").each(function () {
+                $(this).addClass('table-row');
+            })
+
+            $('')
+        })
     </script>
 </head>
 <body>
