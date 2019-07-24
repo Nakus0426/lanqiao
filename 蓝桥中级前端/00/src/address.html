@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>地址四级联动代码</title>
+<link rel="stylesheet" type="text/css" href="css/cssreset-min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<style type="text/css">
+	.citys{
+		margin-bottom: 10px;
+	}
+	.citys p{
+		line-height: 28px;
+	}
+	.warning{
+		color: #c00;
+	}
+	.main a{
+		margin-right: 8px;
+		color: #369;
+	}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.citys.js"></script>
+</head>
+<body>   
+<div class="main">
+
+	<script type="text/javascript">
+		$('#demo1').citys({valueType:'name',province:'福建',city:'厦门',area:'思明'});
+	</script>
+	<div id="demo2" class="citys">
+		<p>
+			<select name="province"></select>
+			<select name="city"></select>
+			<select name="area"></select>
+		</p>
+		<p id="place">请选择地区</p>
+	</div>
+	<script type="text/javascript">
+		$('#demo2').citys({
+			required:false,
+			nodata:'disabled',
+			onChange:function(data){
+				var text = data['direct']?'(直辖市)':'';
+				$('#place').text('当前选中地区：'+data['province']+text+' '+data['city']+' '+data['area']);
+			}
+		});
+	</script>
+	</div>
+</body>
+</html>
