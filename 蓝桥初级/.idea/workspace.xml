@@ -12,28 +12,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/socket_demo/ftp2/FileTransportThread.java">
+        <entry file="file://$PROJECT_DIR$/src/socket_demo/ftp2/MyFTPClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="663">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/socket_demo/ftp2/MyFTPClient.java">
+        <entry file="file://$PROJECT_DIR$/src/stringbuffer_demo/StringBuffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/socket_demo/ftp2/MyFTPServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="126">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -111,9 +102,11 @@
     <option name="width" value="974" />
     <option name="height" value="1057" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="添加" />
+  </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope '产品'; set:产品; class com.intellij.psi.search.scope.ProjectProductionScope" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope '项目文件'; set:项目文件; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -141,6 +134,44 @@
               <item name="蓝桥初级" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="lanqiao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
+            <path>
+              <item name="蓝桥初级" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="lanqiao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="蓝桥初级" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="lanqiao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="socket_demo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="蓝桥初级" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="lanqiao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="socket_demo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ftp2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope '项目文件'; set:项目文件; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="蓝桥初级" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="lanqiao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="蓝桥初级" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="lanqiao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="蓝桥初级" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="lanqiao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="stringbuffer_demo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -150,7 +181,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555416948397" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564130616031" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Tools/IDEA Tools/apache/commons.io/commons-io-2.6.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -176,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyFTPClient">
+  <component name="RunManager" selected="Application.StringBuffer">
     <configuration name="MyFTPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="socket_demo.ftp2.MyFTPClient" />
       <module name="lanqiao" />
@@ -203,12 +234,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread_demo.thread_test4.Test" />
+    <configuration name="StringBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stringbuffer_demo.StringBuffer" />
       <module name="lanqiao" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread_demo.thread_test4.*" />
+          <option name="PATTERN" value="stringbuffer_demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -216,12 +247,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadTest1_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread_demo.ThreadTest1_2" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread_demo.thread_test4.Test" />
       <module name="lanqiao" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread_demo.*" />
+          <option name="PATTERN" value="thread_demo.thread_test4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -244,11 +275,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringBuffer" />
         <item itemvalue="Application.MyFTPClient" />
         <item itemvalue="Application.MyFTPServer" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.ThreadTest2_1" />
-        <item itemvalue="Application.ThreadTest1_2" />
       </list>
     </recent_temporary>
   </component>
@@ -274,15 +305,16 @@
       <workItem from="1554884834160" duration="2917000" />
       <workItem from="1555207425845" duration="4723000" />
       <workItem from="1555416663303" duration="881000" />
-      <workItem from="1564130389646" duration="50000" />
+      <workItem from="1564130389646" duration="321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23832000" />
+    <option name="totallyTimeSpent" value="24103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16044776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -477,13 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stringbuffer_demo/StringBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -691,8 +716,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/socket_demo/ftp2/MyFTPClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="663">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stringbuffer_demo/StringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
