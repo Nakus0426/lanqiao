@@ -1,0 +1,50 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="05_addressBook:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/05_addressBook_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="05_addressBook/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="05_addressBook" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/05_addressBook/web/WEB-INF/libs/ojdbc6-12.1.0.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/el-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/jasper.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/jsp-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/catalina.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/standard.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/ecj-4.6.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/jasper-el.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/jaspic-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-jni.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/catalina-ha.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/servlet-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-dbcp.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-jdbc.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-util.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/catalina-ant.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-coyote.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/websocket-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-i18n-es.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-i18n-fr.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-i18n-ja.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-i18n-ru.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/annotations-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/catalina-tribes.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-util-scan.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-websocket.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/catalina-storeconfig.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/05_addressBook/web/WEB-INF/libs/commons-lang3-3.7.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/05_addressBook/web/WEB-INF/libs/taglibs-standard-impl-1.2.5.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/05_addressBook/web/WEB-INF/libs/taglibs-standard-spec-1.2.5.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/02_empAdmin/web/WEB-INF/libs/gson-2.8.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/02_empAdmin/web/WEB-INF/libs/ojdbc6-12.1.0.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/02_empAdmin/web/WEB-INF/libs/commons-lang3-3.7.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

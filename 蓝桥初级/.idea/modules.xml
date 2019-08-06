@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/01_jsp/01_jsp.iml" filepath="$PROJECT_DIR$/01_jsp/01_jsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/lanqiao.iml" filepath="$PROJECT_DIR$/lanqiao.iml" />
     </modules>
   </component>

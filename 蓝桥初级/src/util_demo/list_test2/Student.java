@@ -30,17 +30,8 @@ public class Student {
 
     @Override
     public boolean equals(Object obj) {
-        return (obj.equals(this.getBirthDay()) && obj.equals(this.getStudentName()));
+        return super.equals(obj);
     }
-
-    /*public boolean equals(Student student) {
-        if (!(!this.birthDay.equals(student.getBirthDay()) || !this.studentName.equals(student.getStudentName()))){
-            return false;
-        }else{
-            return true;
-        }
-
-    }*/
 
     @Override
     public String toString() {

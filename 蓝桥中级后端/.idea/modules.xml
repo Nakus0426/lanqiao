@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01_jsp/01_jsp.iml" filepath="$PROJECT_DIR$/01_jsp/01_jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_empAdmin/02_empAdmin.iml" filepath="$PROJECT_DIR$/02_empAdmin/02_empAdmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_musicStore/04_musicStore.iml" filepath="$PROJECT_DIR$/04_musicStore/04_musicStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_addressBook/05_addressBook.iml" filepath="$PROJECT_DIR$/05_addressBook/05_addressBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_jstl/06_jstl.iml" filepath="$PROJECT_DIR$/06_jstl/06_jstl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/蓝桥中级后端.iml" filepath="$PROJECT_DIR$/蓝桥中级后端.iml" />
+    </modules>
+  </component>
+</project>
