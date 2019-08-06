@@ -39,6 +39,8 @@
           <element id="file-copy" path="$PROJECT_DIR$/02_empAdmin/web/WEB-INF/libs/ojdbc6-12.1.0.2.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/02_empAdmin/web/WEB-INF/libs/commons-lang3-3.7.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/02_empAdmin/web/WEB-INF/libs/gson-2.8.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/02_empAdmin/web/WEB-INF/libs/taglibs-standard-impl-1.2.5.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/02_empAdmin/web/WEB-INF/libs/taglibs-standard-spec-1.2.5.jar" />
         </element>
       </element>
     </root>

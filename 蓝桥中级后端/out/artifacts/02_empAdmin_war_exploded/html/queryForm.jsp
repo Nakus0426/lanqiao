@@ -1,6 +1,7 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ page import="com.lanqiao.commons.DateUtils" %>
-<%@ page import="com.lanqiao.entity.Employee" %>
-<%@ page import="java.util.List" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: zhang naku
   Date: 2019/7/30
@@ -95,37 +96,40 @@
                         <th class="text-center">操作</th>
                     </tr>
 
-                    <%
-                        List<Employee> employees = (List<Employee>) request.getAttribute("employees");
-                        if (employees != null) {
-                            for (Employee e : employees) {
-                    %>
-                    <tr id="tr_<%=e.getEmpno()%>">
-                        <td><%=e.getEmpno()%>
-                        </td>
-                        <td><%=e.getEname()%>
-                        </td>
-                        <td><%=e.getJob()%>
-                        </td>
-                        <td><%=DateUtils.format(e.getHiredate())%>
-                        </td>
-                        <td><%=e.getSal()%>
-                        </td>
-                        <td><%=e.getComm()%>
-                        </td>
-                        <td><%=e.getDname()%>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-info btn-xs bShadow-11h" data-toggle="modal" data-target="#updateModal"
-                                    onclick="toUpdate(this,<%=e.getEmpno()%>)">更新</button>
-                            <a class="btn btn-danger btn-xs delete-emp" href="javascript:void(0)" role="button" empno="<%=e.getEmpno()%>">删除</a>
-                        </td>
-                    </tr>
-                    <%
-                            }
-                        }
-                    %>
+                    <c:if test="${employees != null}">
+                        <c:forEach items="${employees}" var="e">
+                            <tr id="tr_${e.empno}">
+                                <td>${e.empno}
+                                </td>
+                                <td>${e.ename}
+                                </td>
+                                <td>${e.job}
+                                </td>
+                                <td><fmt:formatDate value="${e.hiredate}" pattern="yyyy年MM月dd日"/>
+                                </td>
+                                <td>${e.sal}
+                                </td>
+                                <td>${e.comm}
+                                </td>
+                                <td>${e.dname}
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#updateModal"
+                                            onclick="toUpdate(this,${e.empno})">更新</button>
+                                    <a class="btn btn-danger btn-xs delete-emp" href="javascript:void(0)" role="button" empno="${e.empno}">删除</a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                    </c:if>
                 </table>
+                <nav aria-label="..." style="border-top: #DCDCDC 1px solid">
+                    <ul class="pager text-center">
+                        <li><a href="doQueryForm.jsp?pageNo=1"><span class="glyphicon glyphicon-step-backward"></span></a></li>
+                        <li><a href="doQueryForm.jsp?pageNo=${employeePage.pageNo-1}"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                        <li><a href="doQueryForm.jsp?pageNo=${employeePage.pageNo+1}"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                        <li><a href="doQueryForm.jsp?pageNo=${employeePage.totalPage}"><span class="glyphicon glyphicon-step-forward"></span></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
