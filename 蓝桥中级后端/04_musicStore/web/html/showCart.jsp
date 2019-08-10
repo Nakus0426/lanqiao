@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="com.lanqiao.entity.CartItem" %>
-<%@ page import="com.lanqiao.entity.CdDisc" %>
+<%@ page import="com.com.lanqiao.entity.CartItem" %>
+<%@ page import="com.com.lanqiao.entity.CdDisc" %>
 <%@ page import="java.util.Map" %><%--
   Created by IntelliJ IDEA.
   User: jamesmac

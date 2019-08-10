@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clock {
+    max-width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.hours, .minutes, .seconds {
+    display: inline-block;
+    width: 95px;
+    padding: 2px;
+}
+.hours .blocks, .minutes .blocks, .seconds .blocks {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-flow: row wrap;
+    border-top: 2px solid #141414;
+    padding: 5px 0;
+    height: 100px;
+}
+.hours span.time-unit, .minutes span.time-unit, .seconds span.time-unit {
+    display: block;
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+}
+.hours .blocks span.block, .minutes .blocks span.block, .seconds .blocks span.block {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #141414;
+    margin: 5px;
+}

@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@ page import="com.lanqiao.commons.DateUtils" %>
+<%@ page import="com.com.lanqiao.commons.DateUtils" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhang naku

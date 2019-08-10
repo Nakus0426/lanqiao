@@ -19,25 +19,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/web/WEB-INF/libs" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/libs" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../../Tools/apache-tomcat-8.5.33/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/../../../../Tools/apache-tomcat-8.5.33/lib" recursive="false" />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="commons-lang3-3.9" level="project" />
+    <orderEntry type="library" name="ojdbc6-12.1.0.2" level="project" />
+    <orderEntry type="library" name="taglibs-standard-1.2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.33" level="application_server_libraries" />
   </component>
 </module>

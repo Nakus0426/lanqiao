@@ -1,5 +1,5 @@
-<%@ page import="com.lanqiao.dao.EmployeeDao" %>
-<%@ page import="com.lanqiao.entity.Employee" %>
+<%@ page import="com.com.lanqiao.dao.EmployeeDao" %>
+<%@ page import="com.com.lanqiao.entity.Employee" %>
 <%@ page import="org.apache.commons.lang3.StringUtils" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%

@@ -29,7 +29,6 @@
 
     // 此逻辑表示用户点击的是表单的查询按钮
     if (employeePage == null || StringUtils.isBlank(pageNo)){
-        // 总记录数先写死
         employeePage = new Page<Employee>();
         // 设置当前页号
         employeePage.setPageNo(1);

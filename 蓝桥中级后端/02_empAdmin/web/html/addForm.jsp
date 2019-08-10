@@ -69,7 +69,7 @@
                     <div class="form-group">
                         <label for="inputHiredate" class="col-sm-2 control-label">入职日期</label>
                         <div class="col-sm-10">
-                            <input type="date" name="hiredate" class="form-control" id="inputHiredate" placeholder="请输入入职日期"/>
+                            <input type="date" name="hire_date" class="form-control" id="inputHiredate" placeholder="请输入入职日期"/>
                         </div>
                     </div>
                     <div class="form-group">

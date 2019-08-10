@@ -1,4 +1,4 @@
-<%@ page import="com.lanqiao.dao.EmployeeDao" %>
+<%@ page import="com.com.lanqiao.dao.EmployeeDao" %>
 <%@ page import="org.apache.commons.lang3.StringUtils" %><%--
   Created by IntelliJ IDEA.
   User: jamesmac

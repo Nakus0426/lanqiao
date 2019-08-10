@@ -5,6 +5,8 @@ import com.lanqiao.commons.JdbcUtil;
 import com.lanqiao.commons.ResultSetHandler;
 import com.lanqiao.entity.Employee;
 import com.lanqiao.entity.Page;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.lang3.StringUtils;
 
 import java.sql.*;
@@ -15,6 +17,8 @@ import java.util.List;
  * @author 张建平 on 2019/7/30.
  */
 public class EmployeeDao {
+
+    QueryRunner runner = new QueryRunner(true);
 
     /**
      * 查询员工
@@ -40,18 +44,18 @@ public class EmployeeDao {
             params.add(employee.getDeptno());
         }
 
+        String sql1 = String.valueOf(sql);
+
         try (Connection conn = JdbcUtil.getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql.toString());
-
         ) {
+//          for (int i = 0; i < params.size(); i++) {
+//              // 设置占位符的值
+//              ps.setObject(i + 1, params.get(i));
+//          }
 
-            for (int i = 0; i < params.size(); i++) {
-                // 设置占位符的值
-                ps.setObject(i + 1, params.get(i));
-            }
-
-            ResultSet rs = ps.executeQuery();
-            List<Employee> employees = new ResultSetHandler<Employee>().toBeanList(rs, Employee.class);
+            List<Employee> employees = runner.query(conn, sql1, new BeanListHandler<Employee>(Employee.class), params.toArray());
+//          ResultSet rs = ps.executeQuery();
+//          List<Employee> employees = new ResultSetHandler<Employee>().toBeanList(rs, Employee.class);
             return employees;
 
         } catch (SQLException e) {
@@ -69,11 +73,13 @@ public class EmployeeDao {
         //language=GenericSQL
         String sql = "select EMPNO,ENAME from EMPLOYEE e,(select distinct mgr from EMPLOYEE) m where e.EMPNO=m.MGR";
         try (Connection conn = JdbcUtil.getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql);
+//             PreparedStatement ps = conn.prepareStatement(sql);
         ) {
+//          ResultSet rs = ps.executeQuery();
+//          List<Employee> employees = new ResultSetHandler<Employee>().toBeanList(rs, Employee.class);
 
-            ResultSet rs = ps.executeQuery();
-            List<Employee> employees = new ResultSetHandler<Employee>().toBeanList(rs, Employee.class);
+            List<Employee> employees = runner.query(conn,sql, new BeanListHandler<Employee>(Employee.class));
+
             String json = new Gson().toJson(employees);
             return json;
 
@@ -89,40 +95,44 @@ public class EmployeeDao {
      * @param employee
      */
     public boolean save(Employee employee) {
-        StringBuffer sql = new StringBuffer("insert into EMPLOYEE " +
-                "values (EMP_SEQ.nextval,?,?,?,?,?,?,?)");
+        String sql = "insert into EMPLOYEE " +
+                "values (EMP_SEQ.nextval,?,?,?,?,?,?,?)";
         try (Connection conn = JdbcUtil.getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql.toString());
+             //PreparedStatement ps = conn.prepareStatement(sql.toString());
         ) {
 
-            ps.setString(1, employee.getEname());
-            ps.setString(2, employee.getJob());
-            // 设置经理编号
-            if (employee.getMgr() != null) {
-                ps.setInt(3, employee.getMgr());
-            } else {
-                ps.setNull(3, Types.INTEGER);
-            }
+//            ps.setString(1, employee.getEname());
+//            ps.setString(2, employee.getJob());
+//            // 设置经理编号
+//            if (employee.getMgr() != null) {
+//                ps.setInt(3, employee.getMgr());
+//            } else {
+//                ps.setNull(3, Types.INTEGER);
+//            }
+//
+//            // 设置入职日期
+//            if (employee.getHiredate() != null) {
+//                // 设置的类型为 java.sql.Date
+//                ps.setDate(4, new java.sql.Date(employee.getHiredate().getTime()));
+//            } else {
+//                ps.setNull(4, Types.DATE);
+//            }
+//
+//            ps.setDouble(5, employee.getSal());
+//
+//            if (employee.getComm() != null) {
+//                ps.setDouble(6, employee.getComm());
+//            } else {
+//                ps.setNull(6, Types.DOUBLE);
+//            }
+//            ps.setInt(7, employee.getDeptno());
+//
+//            // 执行
+//            int row = ps.executeUpdate();
 
-            // 设置入职日期
-            if (employee.getHiredate() != null) {
-                // 设置的类型为 java.sql.Date
-                ps.setDate(4, new java.sql.Date(employee.getHiredate().getTime()));
-            } else {
-                ps.setNull(4, Types.DATE);
-            }
-
-            ps.setDouble(5, employee.getSal());
-
-            if (employee.getComm() != null) {
-                ps.setDouble(6, employee.getComm());
-            } else {
-                ps.setNull(6, Types.DOUBLE);
-            }
-            ps.setInt(7, employee.getDeptno());
-
-            // 执行
-            int row = ps.executeUpdate();
+            int row = runner.update(conn, sql, employee.getEname(), employee.getJob(), employee.getMgr()
+                                    , new Date(employee.getHiredate().getTime()), employee.getSal()
+                                    , employee.getComm(), employee.getDeptno());
             return (row == 1 ? true : false);
         } catch (SQLException e) {
             System.err.println("新增员工失败：" + e.getMessage());
@@ -219,8 +229,7 @@ public class EmployeeDao {
 
     /**
      * @param page
-     * @return
-     * 总记录数
+     * @return 总记录数
      */
     public int countForQuery(Page<Employee> page) {
         Employee employee = page.getQueryObject();
@@ -228,15 +237,15 @@ public class EmployeeDao {
         StringBuffer sql = new StringBuffer("select count(*) from EMPLOYEE e,DEPARTMENT d where e.DEPTNO=d.DEPTNO");
         List params = new ArrayList();
 
-        if (StringUtils.isNoneBlank(employee.getEname())){
+        if (StringUtils.isNoneBlank(employee.getEname())) {
             sql.append(" and ename like ? ");
             params.add("%" + StringUtils.upperCase(employee.getEname()) + "%");
         }
-        if (StringUtils.isNoneBlank(employee.getJob())){
+        if (StringUtils.isNoneBlank(employee.getJob())) {
             sql.append(" and job=? ");
             params.add(employee.getJob());
         }
-        if (employee.getDeptno() != null){
+        if (employee.getDeptno() != null) {
             sql.append(" and e.deptno=? ");
             params.add(employee.getDeptno());
         }
@@ -246,7 +255,7 @@ public class EmployeeDao {
         ) {
             for (int i = 0; i < params.size(); i++) {
                 // 设置占位符的值
-                ps.setObject(i+1, params.get(i));
+                ps.setObject(i + 1, params.get(i));
             }
 
             ResultSet resultSet = ps.executeQuery();
@@ -263,6 +272,7 @@ public class EmployeeDao {
 
     /**
      * 查询员工,只查一页数据
+     *
      * @param page
      * @return
      */
@@ -276,15 +286,15 @@ public class EmployeeDao {
                 "       select e.*,d.DNAME from EMPLOYEE e, DEPARTMENT d where e.DEPTNO=d.DEPTNO ");
 
         // 生成查询条件，且将占位符对应位置的值存入列表
-        if (StringUtils.isNoneBlank(employee.getEname())){
+        if (StringUtils.isNoneBlank(employee.getEname())) {
             sql.append(" and ename like ? ");
             params.add("%" + StringUtils.upperCase(employee.getEname()) + "%");
         }
-        if (StringUtils.isNoneBlank(employee.getJob())){
+        if (StringUtils.isNoneBlank(employee.getJob())) {
             sql.append(" and job=? ");
             params.add(employee.getJob());
         }
-        if (employee.getDeptno() != null){
+        if (employee.getDeptno() != null) {
             sql.append(" and e.deptno=? ");
             params.add(employee.getDeptno());
         }
@@ -304,7 +314,7 @@ public class EmployeeDao {
         ) {
             for (int i = 0; i < params.size(); i++) {
                 // 设置占位符的值
-                ps.setObject(i+1, params.get(i));
+                ps.setObject(i + 1, params.get(i));
             }
 
             ResultSet rs = ps.executeQuery();

@@ -1,6 +1,6 @@
-<%@ page import="com.lanqiao.dao.bookDao" %>
-<%@ page import="com.lanqiao.dao.userDao" %>
-<%@ page import="com.lanqiao.entity.Book" %><%--
+<%@ page import="com.com.lanqiao.dao.bookDao" %>
+<%@ page import="com.com.lanqiao.dao.userDao" %>
+<%@ page import="com.com.lanqiao.entity.Book" %><%--
   Created by IntelliJ IDEA.
   User: zhang naku
   Date: 2019/8/4 0004

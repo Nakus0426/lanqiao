@@ -7,7 +7,7 @@
 
     <tlib-version>1.0</tlib-version>
     <short-name>蓝桥通用标签库</short-name>
-    <uri>https://lanqiao.com/tag</uri>
+    <uri>https://com.lanqiao.com/tag</uri>
 
 
     <!-- Invoke 'Generate' action to add tags or functions -->

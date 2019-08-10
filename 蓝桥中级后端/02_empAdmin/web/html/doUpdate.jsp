@@ -1,8 +1,8 @@
-<%@ page import="com.lanqiao.entity.Employee" %>
+<%@ page import="com.com.lanqiao.entity.Employee" %>
 <%@ page import="org.apache.commons.lang3.StringUtils" %>
 <%@ page import="org.apache.commons.lang3.time.DateUtils" %>
 <%@ page import="java.util.Date" %>
-<%@ page import="com.lanqiao.dao.EmployeeDao" %><%--
+<%@ page import="com.com.lanqiao.dao.EmployeeDao" %><%--
   Created by IntelliJ IDEA.
   User: jamesmac
   Date: 2019/8/1

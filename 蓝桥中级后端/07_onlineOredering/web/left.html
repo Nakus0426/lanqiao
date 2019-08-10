@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<%@ page language="java"  pageEncoding="UTF-8"%>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/bootstrap/4.3.1/js/bootstrap.js"></script>
+    <link href="js/bootstrap/4.3.1/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/layout.css" type="text/css" rel="stylesheet">
+    <title>网上订餐</title>
+</head>
+<body>
+    <div class="row">
+        <div id="leftSlide" class="carousel slide carousel-fade mt-5 shadow" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block rounded img-thumbnail" src="images/500008.jpg" height="205" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block rounded img-thumbnail" src="images/500022.jpg" height="205" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block rounded img-thumbnail" src="images/500023.jpg" height="205" alt="Third slide">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="clock">
+            <div class="hours">
+                <span class="time-unit"></span>
+                <div class="blocks"></div>
+            </div>
+            <div class="minutes">
+                <span class="time-unit"></span>
+                <div class="blocks"></div>
+            </div>
+            <div class="seconds">
+                <span class="time-unit"></span>
+                <div class="blocks"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        class Clock {
+
+            /**
+             * Clock initialization
+             */
+            constructor() {
+                this.hourEl   = document.querySelector('.hours > .time-unit');
+                this.minuteEl = document.querySelector('.minutes > .time-unit');
+                this.secondEl = document.querySelector('.seconds > .time-unit');
+                this.hourBlock   = document.querySelector('.hours > .blocks');
+                this.minuteBlock = document.querySelector('.minutes > .blocks');
+                this.secondBlock = document.querySelector('.seconds > .blocks');
+                this.timer();
+                setInterval(() => this.timer(), 1000);
+            }
+
+            /**
+             * Timer of the clock
+             */
+            timer() {
+                this.setVal('hour');
+                this.setVal('minute');
+                this.setVal('second');
+                this.setBlockVal('hour');
+                this.setBlockVal('minute');
+                this.setBlockVal('second');
+            }
+
+            /**
+             * Get time and set the number of block
+             */
+            setVal(el) {
+                let date = new Date(), hours, minutes, seconds, value, block, blocks;
+
+                switch (el) {
+                    case 'hour':
+                        hours       = date.getHours();
+                        el          = this.hourEl;
+                        value       = this.zeroPad(hours);
+                        break;
+                    case 'minute':
+                        minutes     = date.getMinutes();
+                        el          = this.minuteEl;
+                        value       = this.zeroPad(minutes);
+                        break;
+                    case 'second':
+                        seconds     = date.getSeconds();
+                        el          = this.secondEl;
+                        value       = this.zeroPad(seconds);
+                        break;
+                }
+                el.innerHTML  = value;
+                // for (var i = 0; i < value; i++) {
+                //   block = document.createElement("span");
+                //   block.classList.add('block');
+                //   blocks.appendChild(block);
+                // }
+            }
+            setBlockVal(el) {
+                let date = new Date(), hours, minutes, seconds, value, block, blocks;
+
+                switch (el) {
+                    case 'hour':
+                        value       = date.getHours();
+                        el          = this.hourBlock;
+                        break;
+                    case 'minute':
+                        value       = date.getMinutes();
+                        el          = this.minuteBlock;
+                        break;
+                    case 'second':
+                        value       = date.getSeconds();
+                        el          = this.secondBlock;
+                        break;
+                }
+                el.innerHTML = "";
+                for (var i = 0; i < value; i++) {
+                    block = document.createElement("span");
+                    block.classList.add('block');
+                    el.appendChild(block);
+                }
+            }
+            zeroPad(number) {
+                return ('0'+number).slice(-2);
+            }
+        }
+        /* Create new instance of Clock */
+        let clock = new Clock();
+    </script>
+</body>
+
+</html>

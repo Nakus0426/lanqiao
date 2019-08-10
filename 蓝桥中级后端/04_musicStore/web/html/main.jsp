@@ -1,6 +1,6 @@
 <%@ page import="java.util.List" %>
-<%@ page import="com.lanqiao.entity.CdDisc" %>
-<%@ page import="com.lanqiao.dao.CdDiscDao" %><%--
+<%@ page import="com.com.lanqiao.entity.CdDisc" %>
+<%@ page import="com.com.lanqiao.dao.CdDiscDao" %><%--
   Created by IntelliJ IDEA.
   User: zhang naku
   Date: 2019/8/2 0002

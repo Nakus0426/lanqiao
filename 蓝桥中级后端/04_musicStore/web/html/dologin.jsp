@@ -1,6 +1,6 @@
 <%@ page import="java.util.Objects" %>
 <%@ page import="org.apache.catalina.User" %>
-<%@ page import="com.lanqiao.entity.Users" %>
+<%@ page import="com.com.lanqiao.entity.Users" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhang naku

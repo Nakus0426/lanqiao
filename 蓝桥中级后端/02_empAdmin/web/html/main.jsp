@@ -1,4 +1,4 @@
-<%@ page import="com.lanqiao.entity.Users" %><%--
+<%@ page import="com.com.lanqiao.entity.Users" %><%--
   Created by IntelliJ IDEA.
   User: zhang naku
   Date: 2019/7/30 0030

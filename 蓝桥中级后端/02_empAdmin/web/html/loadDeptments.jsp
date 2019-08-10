@@ -1,4 +1,4 @@
-<%@ page import="com.lanqiao.dao.DepartmentDao" %><%--
+<%@ page import="com.com.lanqiao.dao.DepartmentDao" %><%--
   Created by IntelliJ IDEA.
   User: zhang naku
   Date: 2019/7/31

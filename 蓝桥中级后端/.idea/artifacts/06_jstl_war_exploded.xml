@@ -40,6 +40,9 @@
           <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-util-scan.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/tomcat-websocket.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../../../Tools/apache-tomcat-8.5.33/lib/catalina-storeconfig.jar" />
+          <element id="library" level="project" name="ojdbc6-12.1.0.2" />
+          <element id="library" level="project" name="taglibs-standard-1.2.5" />
+          <element id="library" level="project" name="commons-lang3-3.9" />
         </element>
       </element>
     </root>

@@ -1,5 +1,5 @@
-<%@ page import="com.lanqiao.dao.bookDao" %>
-<%@ page import="com.lanqiao.entity.Book" %>
+<%@ page import="com.com.lanqiao.dao.bookDao" %>
+<%@ page import="com.com.lanqiao.entity.Book" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: zhang naku
