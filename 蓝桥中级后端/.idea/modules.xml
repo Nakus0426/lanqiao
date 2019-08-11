@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/05_addressBook/05_addressBook.iml" filepath="$PROJECT_DIR$/05_addressBook/05_addressBook.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_jstl/06_jstl.iml" filepath="$PROJECT_DIR$/06_jstl/06_jstl.iml" />
       <module fileurl="file://$PROJECT_DIR$/07_onlineOredering/07_onlineOredering.iml" filepath="$PROJECT_DIR$/07_onlineOredering/07_onlineOredering.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_eHome/08_eHome.iml" filepath="$PROJECT_DIR$/08_eHome/08_eHome.iml" />
       <module fileurl="file://$PROJECT_DIR$/蓝桥中级后端.iml" filepath="$PROJECT_DIR$/蓝桥中级后端.iml" />
     </modules>
   </component>

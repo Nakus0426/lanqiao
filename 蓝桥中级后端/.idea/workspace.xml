@@ -20,6 +20,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_jsp/01_jsp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/01_jsp/01_jsp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_jsp/web/WEB-INF/libs/jsp-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_jsp/web/WEB-INF/libs/servlet-api.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/02_empAdmin/02_empAdmin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/02_empAdmin/02_empAdmin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02_empAdmin/src/com/lanqiao/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_empAdmin/src/com/lanqiao/dao/DepartmentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02_empAdmin/src/com/lanqiao/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_empAdmin/src/com/lanqiao/dao/EmployeeDao.java" afterDir="false" />
@@ -199,7 +202,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/07_onlineOredering/web/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
+            <state relative-caret-position="183">
               <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
@@ -342,6 +345,17 @@
             <path>
               <item name="蓝桥中级后端" type="b2602c69:ProjectViewProjectNode" />
               <item name="蓝桥中级后端" type="462c0819:PsiDirectoryNode" />
+              <item name="01_jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="蓝桥中级后端" type="b2602c69:ProjectViewProjectNode" />
+              <item name="蓝桥中级后端" type="462c0819:PsiDirectoryNode" />
+              <item name="01_jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="蓝桥中级后端" type="b2602c69:ProjectViewProjectNode" />
+              <item name="蓝桥中级后端" type="462c0819:PsiDirectoryNode" />
               <item name="06_jstl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -379,11 +393,12 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Tools/Maven/commons-logging-1.2.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25977013" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -937,7 +952,7 @@
       <workItem from="1565335067805" duration="17175000" />
       <workItem from="1565355192826" duration="6167000" />
       <workItem from="1565397432404" duration="9742000" />
-      <workItem from="1565418645442" duration="7904000" />
+      <workItem from="1565418645442" duration="8657000" />
     </task>
     <servers />
   </component>
@@ -974,7 +989,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189172000" />
+    <option name="totallyTimeSpent" value="189925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1011,7 +1026,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32928178" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32928178" />
-      <window_info anchor="bottom" id="调试" order="15" sideWeight="0.4989339" visible="true" weight="0.37127072" />
+      <window_info anchor="bottom" id="调试" order="15" sideWeight="0.4989339" weight="0.37127072" />
       <window_info anchor="bottom" id="Tail" order="16" />
       <window_info anchor="bottom" id="Database Console" order="17" weight="0.32928178" />
       <window_info anchor="bottom" id="Problems" order="18" weight="0.32928178" />
@@ -1395,7 +1410,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/07_onlineOredering/web/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
+        <state relative-caret-position="183">
           <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
@@ -1410,7 +1425,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.25977013" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1434,7 +1449,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.25977013" />
               </list>
             </option>
           </splitter-proportions>
@@ -1446,7 +1461,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.25977013" />
               </list>
             </option>
           </splitter-proportions>
@@ -1458,7 +1473,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.37241378" />
+                <option value="0.25977013" />
               </list>
             </option>
           </splitter-proportions>
