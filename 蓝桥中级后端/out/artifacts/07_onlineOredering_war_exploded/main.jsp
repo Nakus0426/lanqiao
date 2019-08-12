@@ -43,7 +43,7 @@
                             <h5 class="card-title text-primary">${food.foodName}</h5>
                             <p class="card-text" style="height: 48px"><span class="text-warning">简介：</span>${food.remark}</p>
                             <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#infoModal" onclick="showInfo(${food.foodId})">单价：￥${food.foodPrice}元</a>
-                            <a href="#" class="btn btn-warning ml-4">立即购买</a>
+                            <a href="" class="btn btn-warning ml-4">立即购买</a>
                         </div>
                     </div>
                 </c:forEach>
