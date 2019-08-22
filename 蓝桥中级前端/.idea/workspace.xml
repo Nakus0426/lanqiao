@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="165e4a38-8eaa-493d-b274-d0da3532587f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00/src/css/carts.css" beforeDir="false" afterPath="$PROJECT_DIR$/00/src/css/carts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00/src/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/00/src/help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00/src/jiesuan.html" beforeDir="false" afterPath="$PROJECT_DIR$/00/src/jiesuan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00/src/shopping.html" beforeDir="false" afterPath="$PROJECT_DIR$/00/src/shopping.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,22 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/00/src/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-              <folding>
-                <element signature="n#script#1;n#head#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,9 +82,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="881" />
-    <option name="width" value="1046" />
-    <option name="height" value="1057" />
+    <option name="x" value="665" />
+    <option name="width" value="740" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="添加" />
@@ -119,35 +100,6 @@
             <path>
               <item name="蓝桥中级前端" type="b2602c69:ProjectViewProjectNode" />
               <item name="蓝桥中级前端" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="蓝桥中级前端" type="b2602c69:ProjectViewProjectNode" />
-              <item name="蓝桥中级前端" type="462c0819:PsiDirectoryNode" />
-              <item name="00" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="蓝桥中级前端" type="b2602c69:ProjectViewProjectNode" />
-              <item name="蓝桥中级前端" type="462c0819:PsiDirectoryNode" />
-              <item name="00" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="蓝桥中级前端" type="b2602c69:ProjectViewProjectNode" />
-              <item name="蓝桥中级前端" type="462c0819:PsiDirectoryNode" />
-              <item name="00" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="蓝桥中级前端" type="b2602c69:ProjectViewProjectNode" />
-              <item name="蓝桥中级前端" type="462c0819:PsiDirectoryNode" />
-              <item name="03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="蓝桥中级前端" type="b2602c69:ProjectViewProjectNode" />
-              <item name="蓝桥中级前端" type="462c0819:PsiDirectoryNode" />
-              <item name="03" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -170,7 +122,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/00/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../onedrive/homework/蓝桥/02中级/中级项目/guimei" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
@@ -231,15 +183,15 @@
       <workItem from="1563930464388" duration="3623000" />
       <workItem from="1563935106248" duration="1947000" />
       <workItem from="1563952000034" duration="2349000" />
+      <workItem from="1565696883805" duration="94000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74840000" />
+    <option name="totallyTimeSpent" value="74934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14963119" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

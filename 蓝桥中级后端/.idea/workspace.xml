@@ -10,13 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92f277ba-1979-45d0-8b87-eb56f3f5e07e" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b858597-8239-40bf-9767-aef8709031bf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b858597-8239-40bf-9767-aef8709031bf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b858597-8239-40bf-9767-aef8709031bf/storage_v2/_src_/schema/LANQIAO.P621Jw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b858597-8239-40bf-9767-aef8709031bf/storage_v2/_src_/schema/LANQIAO.P621Jw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b858597-8239-40bf-9767-aef8709031bf/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b858597-8239-40bf-9767-aef8709031bf/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_onlineOredering/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/07_onlineOredering/web/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_eHome/08_eHome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/08_eHome/08_eHome.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_eHome/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/08_eHome/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../蓝桥中级前端/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../蓝桥中级前端/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +58,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/08_eHome/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
+            <state relative-caret-position="349">
               <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
             </state>
           </provider>
@@ -180,10 +174,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1066" />
+    <option name="x" value="-7" />
+    <option name="width" value="1158" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="添加" />
@@ -193,6 +186,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope '项目文件'; set:项目文件; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="蓝桥中级后端" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -211,17 +215,6 @@
               <item name="蓝桥中级后端" type="462c0819:PsiDirectoryNode" />
               <item name="08_eHome" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope '项目文件'; set:项目文件; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="蓝桥中级后端" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -246,7 +239,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Tools/Maven/commons-logging-1.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../onedrive/homework/蓝桥/02中级/中级项目/guimei" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -886,6 +879,7 @@
       <workItem from="1565483895311" duration="4620000" />
       <workItem from="1565509820103" duration="7953000" />
       <workItem from="1565570290371" duration="2819000" />
+      <workItem from="1566002225618" duration="91000" />
     </task>
     <servers />
   </component>
@@ -922,7 +916,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205317000" />
+    <option name="totallyTimeSpent" value="205408000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -935,9 +929,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20415778" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20628998" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1374,7 +1367,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/08_eHome/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
+        <state relative-caret-position="349">
           <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
         </state>
       </provider>
