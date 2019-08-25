@@ -54,7 +54,7 @@
                             <div class="input-group">
                                 <span class="input-group-addon" >状态:</span>
 
-                                <select name="status" class="form-control" required>
+                                <select name="status" class="form-control" >
                                     <option value="">--请选择--</option>
                                     <option value="0">未上架</option>
                                     <option value="1">已上架</option>
@@ -113,7 +113,7 @@
                         <tr id="tr_${product.prodNo}">
                             <td>${product.prodNo}</td>
                             <td>${product.prodName}</td>
-                            <td><img src="imges/product/${product.image}" alt="" width="50px" height="50px"></td>
+                            <td><img src="images/product/${product.image}.jpg" alt="" width="50px" height="50px"></td>
                             <c:if test="${product.status eq 0}">
                             <td>  <span class="label label-danger">未上架</span></td>
 

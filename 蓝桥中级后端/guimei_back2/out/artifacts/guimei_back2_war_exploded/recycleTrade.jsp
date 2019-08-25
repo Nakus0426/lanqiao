@@ -41,7 +41,7 @@
 <br><br>
 <div class="container">
     <form class="form-inline" action=".do" method="post">
-        <div><c:forEach var="trade" items="${tradeList}">
+        <div>
             <div class="row">
                 <div class="col-md-8 column col-md-offset-2">
                     <div class="form-group">
@@ -61,6 +61,7 @@
     </form>
 
     <div class="row clearfix">
+
         </div>
         <div class="col-md-12 column">
             <div class="panel panel-primary">
@@ -74,6 +75,7 @@
                         <th>操作</th>
 
                     </tr>
+                    <c:forEach var="trade" items="${tradeList}">
                     <tr>
                         <td><div STYLE="display: flex;">
                             <span style="margin-left: 5px">${DateUtils.format(trade.trdTime)}</span>
@@ -85,7 +87,6 @@
                     <tr>
                         <td>
                             <div STYLE="display: flex;">
-                                <img src="images/${trade.imageName}" alt="404"STYLE="width: 70px;height: 70px;">
                                 <div style="width: 253px;margin-top: 10px">
                                     <span>${ trade.ctgrName}</span>
                                     <span>${trade.descr}</span></div>

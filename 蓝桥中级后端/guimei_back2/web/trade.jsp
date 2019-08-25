@@ -82,8 +82,9 @@
                 <table id="emptable" class="table table-striped table-bordered table-hover">
                     <tr class="header">
                         <th>订单详情</th>
-                        <th>收货人</th>
+
                         <th>商品信息</th>
+                        <th>收货人</th>
                         <th>金额</th>
                         <th>操作</th>
 
@@ -98,7 +99,6 @@
                             <span style="margin-left: 15px">${trade.venName}<img src="images/p1.png" alt=""></span></div></td>
                         <td>
                             <div STYLE="display: flex;">
-                                <img src="images/${trade.imageName}" alt="404"STYLE="width: 70px;height: 70px;">
                                 <div style="width: 253px;margin-top: 10px">
                                     <span>${ trade.ctgrName}</span>
                                     <span>${trade.descr}</span></div>

@@ -103,7 +103,7 @@
                         <tr id="tr_${product.prodNo}">
                             <td>${product.prodNo}</td>
                             <td>${product.prodName}</td>
-                            <td><img src="imges/product/${product.image}" alt="" width="50px" height="50px"></td>
+                            <td><img src="images/product/${product.image}.jpg" alt="" width="50px" height="50px"></td>
                             <td>${product.type}</td>
                             <td>${product.price}</td>
                             <td>${product.color}</td>
