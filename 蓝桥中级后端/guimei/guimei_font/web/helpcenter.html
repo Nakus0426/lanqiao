@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!--<%&#45;&#45;-->
+<!--@autor weuguitao-->
+<!--@date 2019/8/15 9:51-->
+<!--&#45;&#45;%>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>售后中心</title>
+    <link rel="stylesheet" href="static/css/helpcenter.css">
+    <script src="static/js/jquery-2.2.4.js"></script>
+    <script src="static/js/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="static/js/helpCenter.js"></script>
+
+    <link rel="stylesheet" href="static/js/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="static/js/bootstrap/3.3.7/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+
+</head>
+<body class="wf-active">
+
+<!--头部导航栏-->
+<header class="header-video preheating-header-black show-panel" hover="false" style="top: 0px;">
+    <div class="index-header-wrapper">
+        <a href="#" class="logo"></a>
+        <ul class="navigator-bar clearfixed">
+            <li class="index">
+                <a href="index.do" sensors-diszble="true" style="text-decoration: none;">
+                    <h2 style="margin-top:18px;">首页</h2>
+                </a>
+            </li>
+            <li>
+                <div class="one-tag">
+                    <a href="#" sensors-disable="true">
+                        <h2 class="start-index-header">沙发</h2>
+                    </a>
+                </div>
+                <ul class="clearfixed index-two-tag-wrap">
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" alt="" src="images/sofa3.png">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>三人沙发</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" alt="" src="images/sofa2.png">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>双人沙发</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" alt="" src="images/sofa1.png">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>单人沙发</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" alt="" src="images/sofa3_big.png">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>大三人沙发</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="one-tag">
+                    <a href="#" sensors-disable="true">
+                        <h2>床具</h2>
+                    </a>
+                </div>
+                <ul class="clearfixed index-two-tag-warp">
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/bed.png" alt="床">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>床</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/bedpad.png" alt="床垫">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>床垫</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/bed4.png" alt="床品4件套">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>床品4件套</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/quilt.png" alt="被芯">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>被芯</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="one-tag">
+                    <a href="#" sensors-disable="true">
+                        <h2>柜架</h2>
+                    </a>
+                </div>
+                <ul class="clearfixed index-two-tag-warp">
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/cosmos.png" alt="COSMO">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>COSMO</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/cupboard.png" alt="置物柜">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>置物柜</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/cupboard_tv.png" alt="电视柜">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>电视柜</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/cupboard_book.png" alt="书柜">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>书柜</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="one-tag">
+                    <a href="#" sensors-disable="true">
+                        <h2>椅凳</h2>
+                    </a>
+                </div>
+                <ul class="clearfixed index-two-tag-warp">
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/chair_sit.png" alt="座椅">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>座椅</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/sit.png" alt="坐墩">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>坐墩</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/chair_fun.png" alt="休闲椅">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>休闲椅</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="tag-img" src="images/seat.png" alt="凳子">
+                            <div class="two-tag-layout">
+                                <h3 class="tag-name">
+                                    <span>凳子</span>
+                                    <span class="red-dot"></span>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="newheader-wrapper">
+        <ul class="menu-bar init">
+            <li><a href="#" rel="nofollow" style="text-decoration: none;">了解贵美</a></li>
+            <li btnname="商品合作">
+                <a href="#" rel="nofollow" sensors-disable="true" style="text-decoration: none;">商业合作</a>
+            </li>
+            <li id="username-box">
+                <a class="selfinfo user-image nologin" sensors-disable="true" href="#"></a>
+                <div class="userbar">
+                    <a href="#" rel="nofollow" sensors-disable="true" btnname="会员中心">会员中心</a>
+                    <a href="#" rel="nofollow" sensors-disable="true" btnname="我的订单">我的订单</a>
+                    <a href="#" class="coupon-giftcard" rel="nofollow" sensors-disable="true" btnname="我的优惠券&amp;礼品卡">我的优惠券<br>&amp;礼品卡</a>
+                    <a href="#" rel="nofollow" sensors-disable="true" btnname="我的消息">我的消息<span class="red-dot msg-icon"
+                                                                                               style="display: none;"></span></a>
+                    <a href="#" rel="nofollow" sensors-disable="true" btnname="我的晒单">我的晒单</a>
+                    <a href="#" rel="nofollow" sensors-disable="true" btnname="我的资料">我的资料</a>
+                    <a href="#" rel="nofollow" sensors-disable="true" btnname="我的收藏">我的收藏</a>
+                    <a rel="nofollow" sensors-disable="true" btnname="退出账号">退出账号</a>
+                </div>
+            </li>
+            <li id="cart-li">
+                <a class="cart-img" sensors-disable="true" href="#" id="cart_box">
+                    <img class="normal" alt="购物车" src="images/cart_normal.png">
+                    <img class="hover" alt="购物车" src="images/cart_hover.png">
+                    <span class="cart-number" style="display: none;"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header><!--头部导航栏 End-->
+
+<div>
+    <img src="images/service6.jpg" height="800" width="1903"/></div>
+<div class="left">
+    <div class="container-fluid" style="margin-left: 200px;font-size: 2em;">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><h2 style="font-size: 2em">售后与服务>></h2></a><br>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <h3>配送与安装<b class="caret"></b></h3>
+
+                    </a>
+                    <ul class="dropdown-menu" >
+                        <li><a href="#cl"><h4>免费配送安装政策</h4></a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:f1()"><h4>大件产品的送货与安装</h4></a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:f2()"><h4>修改送货地址</h4></a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:f3()"><h4>更多配送须知</h4></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <h3>交付政策<b class="caret"></b></h3>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><h4>签收与交付</h4></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><h4>逾期赔付政策</h4></a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <h3>免费仓储<b class="caret"></b></h3>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><h4>免费仓储</h4></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <h3>保价政策<b class="caret"></b></h3>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><h4>7天保价</h4></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <h3>售后服务<b class="caret"></b></h3>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><h4>三包售后服务</h4></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><h4>产品退换货政策</h4></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><h4>退换货流程</h4></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><h4>投诉与受理</h4></a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <a class="navbar-brand" href="aboutus.html"><h2 style="font-size: 2em">Go back>></h2></a>
+    </div>
+</div>
+<div class="left-center">
+    <h2 style="font-size: 2em">《免费配送安装政策》</h2>
+    <h3 style="font-size: 2em">全国配送, 大件家具210城666区县免费上门安装</h3>
+    <br><br>
+    <div class="left-center-show">
+        <h3 class="left-center-h4" style="margin-top: 40px;margin-left: 30px;font-size: 2em;">免费配送安装政策:</h3>
+        <hr>
+        <div class="left-center-show-center">
+            <p>1.贵美配送范围涵盖全国各地（除新疆、西藏、青海三省），若实付金额满￥199，</p>
+            <p>&nbsp;&nbsp;提供免费配送服务，若实付金额未达￥199，按城市距离分级，每单将收取8-16元</p>
+            <p>&nbsp;&nbsp;不等运费。（城市距离分级见下表）</p>
+            <div class="table-box">
+                <table class="agreement-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 81%">省份</th>
+                        <th style="width: 19%">运费</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span>北京、天津、河北、上海、江苏、浙江、广东</span></td>
+                        <td>8元</td>
+                    </tr>
+                    <tr>
+                        <td><span>湖北、湖南、山东、福建、广西、辽宁、吉林、山西、 江西、海南、安徽、河南、内蒙古</span></td>
+                        <td>12元</td>
+                    </tr>
+                    <tr>
+                        <td><span>四川、重庆、云南、贵州、黑龙江、陕西、宁夏、甘肃</span></td>
+                        <td>16元</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>2. 您购买产品后，小件产品贵美会直接发货。</p>
+            <br>
+            <p>3. 贵美快递包邮服务范围以快递公司服务网点正常配送区域为主，物流包邮服务范围</p>
+            <p>&nbsp;&nbsp;以物流公司服务网点正常配送区域为准，超出配送区域的，造作将为您免费发至最</p>
+            <p>&nbsp;&nbsp;近的服务网点，由您自行提货。</p>
+            <br>
+            <p>4. 贵美大件家具在全国210个城市（含北上广深）共666个区县区域内支持免费“送</p>
+            <p>&nbsp;&nbsp;货上门及组装”服务（具体商品请见商品详情页或洽造作服务热线）。</p>
+            <br>
+            <p>5. 超出以上210市666区安装服务区域的用户，在全国包邮区域内，如订单金额超过</p>
+            <p>&nbsp;&nbsp;8000元，可赠送免费上门送货安装服务。(新疆、西藏、青海、港澳台等特殊及偏</p>
+            <p>&nbsp;&nbsp;远地区除外; 若物流服务网络不能正常覆盖的特殊偏远地址（如上海崇明岛等），</p>
+            <p>&nbsp;&nbsp;需向物流公司事先咨询，可能会产生特殊通行费或超派费的，需单独收取。)。若</p>
+            <p>&nbsp;&nbsp;需提供有偿上门安装服务的，则收取订单成交金额*4%，最低299元的服务费。</p>
+            <br>
+            <p>6. 悬挂灯具部分, 目前尙未提供吊灯与顶棚的安装接电服务, 敬请见谅。</p><br>
+            <p>7. 如你的所在地区未被包含于以下列表， 请洽客服电话：400-7788-663， 看看贵美</p>
+            <p>&nbsp;&nbsp;还能多为你做些什么。</p>
+            <br><br>
+        </div>
+    </div>
+</div>
+<p class="important-hint">以上说明解释权归贵美所有</p>
+<script>
+    function f1() {
+        $(function () {
+            $.get('helpshow.html', function (res) {
+                $(".left-center").html(res);
+            }, 'html');
+        });
+    }
+
+    function f2() {
+        $(function () {
+            $.get('helpshow2.html', function (res) {
+                $(".left-center").html(res);
+            }, 'html');
+        });
+    }
+
+    function f3() {
+        $(function () {
+            $.get('helpshow3.html', function (res) {
+                $(".left-center").html(res);
+            }, 'html');
+        });
+    }
+
+    // $(function () {
+    //     //使用get()获取
+    //     $('#c3').click(function () {
+    //             $.get('helpshow2.html',function (res) {
+    //                 $(".left-center").html(res);
+    //             },'html');
+    //         });
+    //
+    //
+    // });
+</script>
+<!--footer-->
+<footer class="newfooter">
+    <div class="nf-wrapper">
+        <dl>
+            <dt class="left">
+                <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btname="">
+                    <img alt="贵美商城官网" class="footer-logo-716" src="images/title_footer.png">
+                    <span class="es-font">guimei.com</span>
+                </a>
+                <div class="clearfixed">
+                    <div class="nf-icon nf-icon-wx" rel="nofollow" btnname="微信按钮" data-toggle="modal"
+                         data-target="#wxModal"></div>
+                    <div class="nf-icon nf-icon-wb" rel="nofollow" btnname="微信按钮"></div>
+                </div>
+            </dt>
+            <dd>
+                <ul class="nf-link-ul">
+                    <li>
+                        <a href="#" class="menu" target="_blank" rel="nofollow" sensors-disable="true" btnname="关于造作">关于造作</a>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="团队介绍">团队介绍</a>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="设计师团">设计师团</a>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="媒体报道">媒体报道</a>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="加入造作">加入造作</a>
+                        <a href="#" class="international" target="_blank" rel="nofollow" sensors-disable="true"
+                           btnname="Designer Hiring">Designer Hiring</a>
+                    </li>
+                    <li>
+                        <i class="menu">服务支持</i>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="服务保障">服务保障</a>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="用户协议">用户协议</a>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="物流售后服务">物流售后服务</a>
+                    </li>
+                    <li>
+                        <i class="menu">商业合作</i>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="集合采购">集合采购</a>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="招商邀约">招商邀约</a>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="品牌合作">品牌合作</a>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="媒体合作">媒体合作</a>
+                        <a href="#" target="_blank" rel="nofollow" sensors-disable="true" btnname="设计师入驻">设计师入驻</a>
+                    </li>
+                </ul>
+            </dd>
+            <dt class="right">
+                <div class="nf-contact-us">
+                    <a href="#" rel="nofollow" btnname="联系我们">联系我们</a>
+                    <p class="es-font">400-0000-000<span class="es-font">（0:00~0:00）</span></p>
+                    <div class="server-online" btnname="在线客服" href="#" target="">在线客服</div>
+                    <div class="shop-entry">
+                        <a href="#" target="_blank" sensors-disable="true" btnname="全国实体店"><span>全国实体店(没有)</span>
+                            <i class="icon_zaozuosvg_right"></i>
+                        </a>
+                    </div>
+                </div>
+            </dt>
+        </dl>
+        <div class="nf-copyright">
+            <p>Copyright © 2019 guimei.com Inc.All Rights Reserved. 桂林贵美科技有限公司</p>
+            <p>
+                <span>版权所有</span>
+                <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">京ICP备66666666号-1</a>
+                <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank"
+                   class=" last-child" rel="nofollow">增值电信业务经营许可证：京ICP证000001号</a>
+            </p>
+            <p><a style="padding-left: 0" href="https://www.zaozuo.com/">贵美</a>官网-全球设计师创作<a style="padding-left: 0"
+                                                                                            href="https://www.zaozuo.com/">家居品牌</a>
+            </p>
+        </div>
+    </div>
+</footer><!--footer End-->
+
+<!--侧边浮动按钮-->
+<dl class="icon-70-wrapper">
+    <dt class="icon-70 icon-70-gift fix" btnname="新人礼浮泡" style="display: block;"></dt>
+    <dt class="icon-70 icon-70-app" id="jump_app">
+        <a href="#" target="_blank" rel="nofollow">
+            <div class="icon-70-title">
+                <p>没有App</p>
+            </div>
+        </a>
+    </dt>
+    <dt class="icon-70 icon-70-service last" href="#" target="">
+        <div class="icon-70-title">客服</div>
+    </dt>
+    <dt class="icon-70 icon-70-top" id="toTop" style="display: none">
+        <div class="icon-70-title">回顶部</div>
+    </dt>
+</dl>
+<!--侧边浮动按钮 End-->
+
+<!--客服弹窗-->
+<div id="udesk_container" style="display: none">
+    <div id="udesk_panel">
+        <iframe id="udesk_iframe" frameborder="0" scrolling="no" allowtransparency="true" src="udesk_iframe.html"
+                style="width: 364px;height: 573px;"></iframe>
+    </div>
+</div>
+<script>
+    $(function () {
+        //点击客服按钮显示客服弹窗，再次点击则关闭
+        $('.icon-70-service').click(function () {
+            if ($('#udesk_container').is(':hidden')) {
+                $('#udesk_container').show(200);
+            } else {
+                $('#udesk_container').hide(200);
+            }
+        });
+
+        //点击返回顶部
+        $('.icon-70-top').click(function () {
+            $('html').animate({
+                scrollTop: '0'
+            }, 300);
+        })
+    });
+
+    //提供给客服弹窗点击关闭时使用
+    function closeUdesk() {
+        $('#udesk_container').hide(200);
+    }
+
+</script>
+<!--客服弹窗 End-->
+
+<!--微信分享弹窗-->
+<div class="modal fade" id="wxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/wx.png" alt="">
+            </div>
+            <div class="modal-footer">
+                <p align="center">用微信扫码，关注贵美微信公众号，随时随地体验生活美学</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--微信分享弹窗 End-->
+</body>
+</html>

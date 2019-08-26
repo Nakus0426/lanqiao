@@ -1,0 +1,75 @@
+.wf-active{
+    margin:0;/* 外边距0 */
+    padding:0;/* 内边距0 */
+    font-family: siyuan,"Microsoft YaHei",sans-serif;
+}
+.important-hint {
+    width: 86%;
+    margin: 3.3rem 7% 0 0;
+    float: right;
+    text-align: right;
+    font-size: .9rem;
+    line-height: 1;
+    color: #000;
+}
+.left{
+    padding: 30px;
+    color: #0f0f0f;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 270px;
+}
+.left-center{
+    width: 1320px;
+    height: auto;
+    text-align: center;
+    margin-left: 15%;
+}
+.show-center{
+    width: 1320px;
+    height: auto;
+    text-align: center;
+}
+.left-center-show{
+    margin-left: 20px;
+    border: gray 1px solid;
+    width: 1250px;
+    height: auto;
+    text-align: left;
+}
+.left-center-h4{
+    height: 50px;
+}
+.left-center-show-center{
+    margin-left: 18%;
+    width: 880px;
+    font-size: 20px;
+}
+.table-box {
+    width: 82%;
+    padding-left: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+.agreement-table {
+    width: 100%;
+    border: gray 1px solid;
+}
+.agreement-table thead tr th {
+    text-align: center;
+    height: 29px;
+    line-height: 29px;
+    font-size: .8rem;
+    color: #FFF;
+    background: #000;
+}
+.agreement-table tbody tr td {
+    height: 50px;
+    line-height: 1;
+    box-sizing: border-box;
+    font-size: .16rem;
+    font-weight: 700;
+    position: relative;
+}

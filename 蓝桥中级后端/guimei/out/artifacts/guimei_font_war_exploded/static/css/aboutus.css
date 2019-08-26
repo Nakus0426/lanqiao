@@ -1,0 +1,49 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+a{
+
+    color: #1b1b1b;
+    text-decoration: none;
+}
+a:hover {
+    color: gray;
+    background-color: gray;
+}
+html {
+    overflow-y: scroll;
+}
+body{
+    margin:0;/* 外边距0 */
+    padding:0;/* 内边距0 */
+    font:12px/1.8 '微软雅黑';/*  设置页面的字体大小，字体*/
+}
+.top-pre{
+    text-align: center;
+    font-size: 30px;
+}
+.middle-left{
+    height: 150px;
+    width: 500px;
+    margin-left: 30px;
+}
+.middle-left li{
+    list-style: none;
+    font-size: 16px;
+}
+.middle-rigth{
+    margin:0;/* 外边距0 */
+    padding:0;/* 内边距0 */
+}
+.finally{
+    position: relative;
+    text-align: center;
+}
+.service-container{
+    padding: 20px;
+    margin-left: 12%;
+    height: 348px;
+    width: 1468px;
+    position: absolute;
+}
+
