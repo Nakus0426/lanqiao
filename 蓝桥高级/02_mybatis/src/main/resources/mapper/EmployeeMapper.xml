@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace: 命名空间，用于标识每一个Mapper XML文件中的语句，预防在不同的Mapper XML文件中存在相同的语句ID-->
+<mapper namespace="mapper.EmployeeMapper">
+
+    <resultMap id="baseResultMap" type="Employee">
+        <!-- 专门映射主键列 -->
+        <id property="empno" column="EMPNO"/>
+        <result property="ename" column="ENAME"/>
+        <result property="job" column="JOB"/>
+        <result property="mgr" column="MGR"/>
+        <result property="hiredate" column="HIREDATE"/>
+        <result property="sal" column="SAL"/>
+        <result property="comm" column="COMM"/>
+        <result property="deptno" column="DEPTNO"/>
+    </resultMap>
+
+    <!--resultType: 也称为自动映射，只有在表的列名与POJO类的属性完全一致时使用，会比较方便。-->
+    <select id="selectAll" resultType="Employee">
+        select * from employee
+    </select>
+
+    <select id="selectById" resultType="Employee" parameterType="int">
+        select * from EMPLOYEE where EMPNO=#{id}
+    </select>
+
+    <select id="selectSelective" resultType="Employee" resultMap="baseResultMap">
+        select * from EMPLOYEE
+        <where>
+            <if test="ename != null">
+                <bind name="pattern" value="'%'+ename+'%'"/>
+                and ENAME like #{pattern}
+            </if>
+            <if test="deptno != null">and DEPTNO = #{deptno}</if>
+        </where>
+    </select>
+
+    <sql id="update_setCol">
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            EMPNO,
+            <if test="ename != null">ENAME,</if>
+            <if test="job != null">JOB,</if>
+            <if test="mgr != null">MGR,</if>
+            <if test="hiredate != null">HIREDATE,</if>
+            <if test="sal != null">SAL,</if>
+            <if test="comm != null">COMM,</if>
+            <if test="deptno != null">DEPTNO,</if>
+        </trim>
+    </sql>
+
+    <sql id="update_values">
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            #{empno},
+            <if test="ename != null">#{ename},</if>
+            <if test="job != null">#{job},</if>
+            <if test="mgr != null">#{mgr},</if>
+            <if test="hiredate != null">#{hiredate},</if>
+            <if test="sal != null">#{sal},</if>
+            <if test="comm != null">#{comm},</if>
+            <if test="deptno != null">#{deptno},</if>
+        </trim>
+    </sql>
+
+    <insert id="insert_2" parameterType="Employee">
+        <selectKey keyProperty="empno" resultType="integer" order="BEFORE">
+            select EMP_SEQ.nextval from dual
+        </selectKey>
+        insert into EMPLOYEE <include refid="update_setCol"/> values <include refid="update_values"/>
+    </insert>
+</mapper>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE employees SYSTEM "employees.dtd">
+<employees>
+    <employee id="01">
+        <name>zjp</name>
+        <gender>男</gender>
+        <comm>200</comm>
+        <address>桂林</address>
+        <phone>110</phone>
+    </employee>
+</employees>

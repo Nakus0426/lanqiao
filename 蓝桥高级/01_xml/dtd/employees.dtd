@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT employees (employee+)>
+<!ELEMENT employee (name,gender,comm,address,phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT comm (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+
+<!ATTLIST employee id ID #REQUIRED>
+<!ATTLIST gender (男|女) "男">
