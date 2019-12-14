@@ -7,11 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="02_mybatis" />
+        <module name="03_springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="02_mybatis" target="1.8" />
+      <module name="03_springboot" target="1.8" />
       <module name="HelloApi" target="1.7" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="03_springboot" options="-parameters" />
+    </option>
   </component>
 </project>
