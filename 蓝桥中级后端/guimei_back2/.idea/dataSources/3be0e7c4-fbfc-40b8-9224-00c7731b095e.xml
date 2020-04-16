@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
-  <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.14">
+  <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.17">
     <root id="1">
       <ServerVersion>10.2.0.3.0</ServerVersion>
     </root>
@@ -28,7 +28,6 @@
       <ModifiedTimestamp>2019-08-19.17:56:36</ModifiedTimestamp>
       <IntrospectionTimestamp>2019-08-24.03:46:56</IntrospectionTimestamp>
       <Current>1</Current>
-      <Visible>1</Visible>
     </schema>
     <schema id="9" parent="1" name="LANQIAO">
       <ObjectId>56</ObjectId>
@@ -59,7 +58,6 @@
       <CreatedTimestamp>2007-04-17.11:34:50</CreatedTimestamp>
       <ModifiedTimestamp>2019-08-20.06:24:38</ModifiedTimestamp>
       <IntrospectionTimestamp>2019-08-24.03:46:58</IntrospectionTimestamp>
-      <Visible>1</Visible>
     </schema>
     <schema id="18" parent="1" name="SCOTT">
       <ObjectId>54</ObjectId>
